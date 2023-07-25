@@ -294,13 +294,15 @@ height: 100%;
     justify-content: flex-start;
     align-items: center;
 }
-#sec3 .three .row1{
+#sec3 .three .row1,
+#sec4 .four .row1{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#sec3 .three .row1 h2{
+#sec3 .three .row1 h2,
+#sec4 .four .row1 h2{
    margin: 0;
    font-size: 28px;
    font-weight: 700;
@@ -309,7 +311,8 @@ height: 100%;
  
    position: relative;
 }
-#sec3 .three .row1 h2::after{
+#sec3 .three .row1 h2::after,
+#sec4 .four .row1 h2::after{
     content: '';
     position: absolute;
     width: 2px;
@@ -373,19 +376,22 @@ height: 100%;
     height: 5rem;
    
 } 
-#sec3 .three .row3 .productALLbtn{
+#sec3 .three .row3 .productALLbtn,
+#sec4 .four .projects .projectALLbtn{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#sec3 .three .row3 .productALLbtn button{
+#sec3 .three .row3 .productALLbtn button,
+#sec4 .four .projects .projectALLbtn button{
    padding:.8rem 1rem ;
   background-color: transparent;
   border: 1px solid var(--homeafter);
 }
-#sec3 .three .row3 .productALLbtn button a{
+#sec3 .three .row3 .productALLbtn button a,
+#sec4 .four .projects .projectALLbtn button a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -397,7 +403,119 @@ height: 100%;
      line-height: 26.78px;
   
 }
-#sec3 .three .row3 .productALLbtn button a img{
+#sec3 .three .row3 .productALLbtn button a img,
+#sec4 .four .projects .projectALLbtn button a img{
 width: 23px;
 height: 11.4px;
+}
+
+
+/*------------------------- section four------------------------------- */
+#sec4 .four .row1 .projectTitle{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#sec4{
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 5rem;
+}
+#sec4 .four{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#sec4 .four .projects{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    margin-top: 4rem;
+    
+}
+#sec4 .four .projects .project{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    position: relative;
+}
+#sec4 .four .projects .project.right{
+   align-items: flex-start;
+}
+#sec4 .four .projects .project.left{
+    align-items: flex-end;
+}
+#sec4 .four .projects .project .projectImage{
+    width: 55%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+#sec4 .four .projects .project .projectImage img{
+    max-width: 100%;
+ width: 100%;
+ height: 100%;
+}
+#sec4 .four .projects .project .projectName{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#sec4 .four .projects .project .projectName h3{
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--homeText);
+    position: absolute;
+    margin: 0;
+}
+#sec4 .four .projects .project .projectName h3.right{
+    left: 48%;
+    transform: translateY(-208%);
+    -webkit-transform: translateY(-208%);
+    -moz-transform: translateY(-208%);
+    -ms-transform: translateY(-208%);
+    -o-transform: translateY(-208%);
+}
+#sec4 .four .projects .project .projectName h3.left{
+    left: 8%;
+    transform: translateY(-208%);
+    -webkit-transform: translateY(-208%);
+    -moz-transform: translateY(-208%);
+    -ms-transform: translateY(-208%);
+    -o-transform: translateY(-208%);
+    color: var(--white) !important;
+}
+#sec4 .four .projects .project .projectName h3::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    bottom: -160%;
+    transform: rotate(90deg);
+    right: 48%;
+    border-radius: 3px;
+    background-color: var(--homeafter);
+    -webkit-border-radius: 3px;
+    top: -125%;
 }
