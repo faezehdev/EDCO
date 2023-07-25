@@ -1,4 +1,5 @@
 // play pause video
+
 const playBTN =document.getElementById("PlayPuase")
 const video = document.getElementById("video-elem")
 
