@@ -1,9 +1,12 @@
 @font-face {
-    font-family:"Anjoman";
+    font-family: 'Anjoman-Black';
     src:
-    local("Anjoman")
+   
      url('../Styles/fonts/Anjoman/Anjoman-Black.ttf') format('ttf'),
-    url('../Styles/fonts/Anjoman/Anjoman-Condensed.ttf') format('ttf')
+    url('../Styles/fonts/Anjoman/Anjoman-Condensed.ttf') format('ttf'),
+    url('../Styles/fonts/Anjoman/Anjoman-Black.woff') format('woff'),
+    url('../Styles/fonts/Anjoman/Anjoman-Black.eot') format('eot'),
+    url('../Styles/fonts/Anjoman/Anjoman-Black.otf') format('otf')
     ;
 }
 body{
@@ -15,10 +18,14 @@ body{
     margin: 0;
     direction: rtl;
     box-sizing: border-box;
+    font-family: 'Anjoman-Black';
    
 }
+p , h1 , h2 , h3,a{
+    font-family: 'Anjoman-Black' !important;
+}
 *{
-    font-family: Anjoman-Black , 'Anjoman';
+    font-family: 'Anjoman-Black';
 }
 a{
     text-decoration: none;
@@ -211,7 +218,7 @@ height: 100%;
 }
 .container #sec2 .two .content .textBox{
     width: 511px;
-    height: 544px;
+   padding: 1rem;
     background-color:var(--homeSec2textBG) ;
     margin-right: 5rem;
     display: flex;
@@ -493,7 +500,7 @@ align-items: center;
     margin: 0;
 }
 .container #sec4 .four .projects .project .projectName h3.right{
-    left: 48%;
+    left: 46%;
     transform: translateY(-208%);
     -webkit-transform: translateY(-208%);
     -moz-transform: translateY(-208%);
@@ -501,13 +508,14 @@ align-items: center;
     -o-transform: translateY(-208%);
 }
 .container #sec4 .four .projects .project .projectName h3.left{
-    left: 8%;
+    left: 6%;
     transform: translateY(-208%);
     -webkit-transform: translateY(-208%);
     -moz-transform: translateY(-208%);
     -ms-transform: translateY(-208%);
     -o-transform: translateY(-208%);
     color: var(--white) !important;
+    top: 1%;
 }
 .container #sec4 .four .projects .project .projectName h3::after{
     content: '';
@@ -520,7 +528,7 @@ align-items: center;
     border-radius: 3px;
     background-color: var(--homeafter);
     -webkit-border-radius: 3px;
-    top: -125%;
+    top: -60%;
 }
 
 
@@ -1848,13 +1856,15 @@ height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
 }
 .listProduct #sec2 .two .row2 .productContainer{
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(3 , 1fr);
     justify-content: center;
     align-items: center;
+    gap: 4rem;
 }
 .listProduct #sec2 .two .row2 .productContainer .product{
     display: flex;
@@ -1863,10 +1873,11 @@ height: 100%;
     flex-direction: column;
     width: 100%;
     height: 100%;
+    margin: 2rem 0;
 }
 .listProduct #sec2 .two .row2 .productContainer .product .productImage{
-    width: 60%;
-    height: 60%;
+    width:20rem;
+    height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
