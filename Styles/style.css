@@ -35,7 +35,8 @@ ul{
 --homeText:#000000;
 --homeafter:#00A752;
 --homeSec2textBG:#1F1F1F;
---white:#FFFFFF
+--white:#FFFFFF;
+--homeSec6text:#373435
 }
 /*-------------------------------home page styles----------------------- */
 .container{
@@ -518,4 +519,145 @@ align-items: center;
     background-color: var(--homeafter);
     -webkit-border-radius: 3px;
     top: -125%;
+}
+
+
+/*------------------------- section five------------------------------- */
+
+#sec5{
+    width: 100%;
+    height: 610px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+}
+#sec5 .five{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+#sec5 .five video{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#sec5 .five .videoControl{
+position: absolute;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+top: 0;
+left: 0;
+align-items: center;
+}
+#sec5 .five .videoControl #PlayPuase{
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+#sec5 .five .videoControl #PlayPuase:hover{
+    cursor: pointer;
+}
+
+/*------------------------- section six------------------------------- */
+#sec6{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+#sec6 .six{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+#sec6 .six .posts{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+}
+#sec6 .six .posts .post{
+    width: 339px;
+    height: 354px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#sec6 .six .posts .post .postImage{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+#sec6 .six .posts .post .postImage img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+#sec6 .six .posts .post .postTitle{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#sec6 .six .posts .post .postTitle h3{
+    font-size: 16px;
+    color: var(--homeText);
+    padding-right: 1vw;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 5.5vh;
+}
+#sec6 .six .posts .post .postDetail{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+}
+#sec6 .six .posts .post .postDetail p{
+    padding: 0 1vw;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--homeSec6text);
+}
+#sec6 .six .posts .post .postBtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sec6 .six .posts .post .postBtn button{
+    background-color: transparent;
+    border-bottom: 2px solid var(--homeafter);
+    border-top: none;
+    border-left: none;
+    border-radius: 2px;
+    border-right: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    padding: .3rem;
+}
+#sec6 .six .posts .post .postBtn button:hover{
+    cursor: pointer;
 }
