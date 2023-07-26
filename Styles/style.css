@@ -5377,3 +5377,83 @@ height: 100%;
     -o-transform: translateX(13%);
 }
 
+
+/*------------------------------contactUs page sec 1----------------------------------- */ 
+
+
+.contactUs{
+    width: 100%;
+    height: 100%;
+  
+}
+
+.contactUs #sec1{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+.contactUs #sec1 .one {
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    position: relative;
+
+}
+
+.contactUs #sec1 .one header{
+    width: 80%;
+    height: 18%;
+    display: grid;
+    grid-template-columns:1fr 6fr;
+
+}
+.contactUs #sec1 .one header nav{
+width: 100%;
+height: 100%;
+}
+.contactUs #sec1 .one header nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+   
+    margin-top: -0.8rem;
+}
+.contactUs #sec1 .one header nav ul li{
+    list-style-type: none;
+    padding-left: 2rem;
+}
+.contactUs #sec1 .one header nav ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Anjoman';
+    color: var(--homeText);
+    line-height: 25.1px;
+}
+.contactUs #sec1 .one header .logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem;
+}
+.contactUs #sec1 .one .row{
+    width: 100%;
+    height: 39rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.contactUs #sec1 .one .row img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
