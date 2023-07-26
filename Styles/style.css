@@ -51,6 +51,8 @@ ul{
 --productSec21:#EBEAEA;
 --article:#3C3C3C;
 --articlePost:#373435;
+--oboutus:#272727;
+--orange:#FE7D21
 }
 /*-------------------------------home page styles----------------------- */
 .container{
@@ -4760,4 +4762,618 @@ width: 100%;
 }
     
     
-    
+ /*------------------------------aboutUs page sec 1----------------------------------- */   
+ 
+
+.aboutUs{
+    width: 100%;
+    height: 100%;
+  
+}
+
+.aboutUs #sec1{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+.aboutUs #sec1 .one {
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    position: relative;
+
+}
+
+.aboutUs #sec1 .one header{
+    width: 80%;
+    height: 18%;
+    display: grid;
+    grid-template-columns:1fr 6fr;
+
+}
+.aboutUs #sec1 .one header nav{
+width: 100%;
+height: 100%;
+}
+.aboutUs #sec1 .one header nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+   
+    margin-top: -0.8rem;
+}
+.aboutUs #sec1 .one header nav ul li{
+    list-style-type: none;
+    padding-left: 2rem;
+}
+.aboutUs #sec1 .one header nav ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Anjoman';
+    color: var(--homeText);
+    line-height: 25.1px;
+}
+.aboutUs #sec1 .one header .logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem;
+}
+.aboutUs #sec1 .one .row{
+    width: 100%;
+    height: 39rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.aboutUs #sec1 .one .row img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.aboutUs #sec1 .one .row{
+    width: 100%;
+    height: 39rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.aboutUs #sec1 .one .row img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+ /*------------------------------aboutUs page sec 2----------------------------------- */   
+ .aboutUs  #sec2{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+ }
+.aboutUs  #sec2 .two{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutUs  #sec2 .two .row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.aboutUs  #sec2 .two .row .projectTitle
+{ margin-left: -7%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 2%;
+}
+.aboutUs  #sec2 .two .row .projectTitle h2{
+   margin: 0;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 46.87px;
+   font-family: anjoman , 'anjoman';
+ 
+   position: relative;
+}
+.aboutUs  #sec2 .two .row .projectTitle h2::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 104px;
+    bottom: -160%;
+    transform: rotate(90deg);
+    right: 48%;
+    border-radius: 3px;
+    background-color: var(--homeafter);
+    -webkit-border-radius: 3px;
+    top: 0;
+}
+.aboutUs  #sec2 .two .row2{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.aboutUs  #sec2 .two .row2 .col{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutUs  #sec2 .two .row2 .col .text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.aboutUs  #sec2 .two .row2 .col .text p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.aboutUs  #sec2 .two .row2 .col .image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+.aboutUs  #sec2 .two .row2 .col .image img{
+    max-width: 100%;
+}
+
+/*------------------------------aboutUs page sec 3----------------------------------- */   
+
+.aboutUs  #sec3{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: var(--oboutus);
+ }
+.aboutUs  #sec3 .three{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 3rem 0;
+    gap: 8rem;
+   
+}
+.aboutUs  #sec3 .three .col1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    position: relative;
+}
+.aboutUs  #sec3 .three .col1 video{
+    width: 30rem;
+    height: 35rem;
+    object-fit: fill;
+   
+}
+.aboutUs  #sec3 .three .col1 .videoControl{
+position: absolute;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+top: 0;
+left: 0;
+align-items: center;
+}
+.aboutUs  #sec3 .three .col1 video .videoControl #PlayPuase{
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.aboutUs  #sec3 .three .col1 video .videoControl #PlayPuase:hover{
+    cursor: pointer;
+}
+
+.aboutUs  #sec3 .three .col2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutUs  #sec3 .three .col2 .text{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.aboutUs  #sec3 .three .col2 .text::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: 3px;
+    background-color: var(--orange);
+}
+.aboutUs  #sec3 .three .col2 .text p{
+   font-size: 18px;
+   font-weight: 300;
+   line-height: 30.13px;
+   color: var(--white);
+
+}
+/*------------------------------aboutUs page sec 4----------------------------------- */   
+.aboutUs  #sec4{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.aboutUs  #sec4 .four{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3rem 0;
+    gap: 8rem;
+}
+.aboutUs  #sec4 .four .col1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutUs  #sec4 .four .col1 .projectTitle
+{ margin-left: -7%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 2%;
+}
+.aboutUs  #sec4 .four .col1 .projectTitle h2{
+   margin: 0;
+   font-size: 22px;
+   font-weight: 500;
+   line-height: 46.87px;
+   font-family: anjoman , 'anjoman';
+ 
+   position: relative;
+}
+.aboutUs  #sec4 .four .col1 .projectTitle h2::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 104px;
+    bottom: -160%;
+    transform: rotate(90deg);
+    right: 48%;
+    border-radius: 3px;
+    background-color: var(--homeafter);
+    -webkit-border-radius: 3px;
+    top: 0;
+}
+.aboutUs  #sec4 .four .col1 .text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutUs  #sec4 .four .col1 .text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px
+}
+.aboutUs  #sec4 .four .col2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.aboutUs  #sec4 .four .col2 .image{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutUs  #sec4 .four .col2 .image img{
+    max-width: 100%;
+}
+
+/*------------------------------aboutUs page sec 5----------------------------------- */ 
+.aboutUs  #sec5{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.aboutUs  #sec5 .five{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.aboutUs  #sec5 .five .row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.aboutUs  #sec5 .five .row .Title
+{ margin-left: -7%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2%;
+}
+.aboutUs  #sec5 .five .row .Title h2{
+   margin: 0;
+   font-size: 22px;
+   font-weight: 500;
+   line-height: 46.87px;
+   font-family: anjoman , 'anjoman';
+ 
+   position: relative;
+}
+.aboutUs  #sec5 .five .row .Title h2::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 104px;
+    bottom: -160%;
+    transform: rotate(90deg);
+    right: 48%;
+    border-radius: 3px;
+    background-color: var(--homeafter);
+    -webkit-border-radius: 3px;
+    top: 0;
+}
+.aboutUs  #sec5 .five .row  span{
+    width:10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutUs  #sec5 .five .row  span img{
+    max-height: 100%;
+}
+.aboutUs  #sec5 .five .row:nth-child(2){
+    padding-right: 6rem;
+}
+
+
+/*------------------------------aboutUs page sec 6 footer----------------------------------- */ 
+.aboutUs  #sec6{
+    margin-top: 3rem;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer);
+}
+.aboutUs  #sec6 .footer{
+    width: 100%;
+    height: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 3fr 1fr;
+   gap: 15px;
+}
+.aboutUs  #sec6 .footer .row1{
+    width: 80%;
+height: 100%;
+    display: grid;
+    grid-template-columns:1fr 3fr 3fr 1fr ;
+    grid-template-rows: auto;
+    justify-self: center;
+
+}
+.aboutUs  #sec6 .footer .row2{
+    width: 90%;
+}
+.aboutUs  #sec6 .footer .row1 .col1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .aboutUs  #sec6 .footer .row1 .col1 .logo{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3%;
+    margin-top: 2rem;
+    border-left: 1px solid var(--white);
+}
+.aboutUs  #sec6 .footer .row1 .col2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+ 
+}
+.aboutUs  #sec6 .footer .row1 .col2 ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10%;
+    align-items: flex-end;
+}
+.aboutUs  #sec6 .footer .row1 .col2 ul li{
+    list-style-type: none;
+    padding: 0 3%;
+}
+.aboutUs  #sec6 .footer .row1 .col2 ul li a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+.aboutUs  #sec6 .footer .row1 .col3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutUs  #sec6 .footer .row1 .col3 .contactAdress{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.aboutUs  #sec6 .footer .row1 .col3 .contactAdress p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+    width: 100%;
+    margin: 0;
+    padding-top: 1%;
+   
+}
+.aboutUs  #sec6 .footer .row1 .col3 .contactPhone{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+    transform:translateY(-18%) ;
+    -webkit-transform:translateY(-18%) ;
+    -moz-transform:translateY(-18%) ;
+    -ms-transform:translateY(-18%) ;
+    -o-transform:translateY(-18%) ;
+}
+.aboutUs  #sec6 .footer .row1 .col3 .contactPhone span:nth-child(1){
+    width: 7%;
+}
+.aboutUs  #sec6 .footer .row1 .col3 .contactPhone a{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+}
+.aboutUs  #sec6 .footer .row1 .col3 .contactPhone span:nth-child(2){
+    width: 10px;
+    height: 1px;
+    background-color: var(--white);
+}
+.aboutUs  #sec6 .footer .row1 .col4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.aboutUs  #sec6 .footer .row1 .col4 .socials{
+    margin-bottom: 16%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+ }
+ .aboutUs  #sec6 .footer .row1 .col4 .socials img{
+    margin: 25% 0;
+}
+.aboutUs  #sec6 .footer .row2{
+    width: 90%;
+    height: 100%;
+    justify-self: center;
+    display: flex;
+    border-top: 1px solid var(--white);
+    justify-content: center;
+    align-items: center;
+}
+.aboutUs  #sec6 .footer .row2 .col1{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.aboutUs  #sec6 .footer .row2 .col1 p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+}
+.aboutUs  #sec6 .footer .row2 .col2 p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+}
+.aboutUs  #sec6 .footer .row2 .col2{
+    width: 50%;
+    display: flex;
+    transform: translateX(13%);
+    justify-content: flex-end;
+    -webkit-transform: translateX(13%);
+    -moz-transform: translateX(13%);
+    -ms-transform: translateX(13%);
+    -o-transform: translateX(13%);
+}
+
