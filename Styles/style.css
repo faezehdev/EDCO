@@ -2155,6 +2155,7 @@ height: 80%;
 display: flex;
 justify-content: center;
 align-items: center;
+position: relative;
 }
 .product #sec1  .one .sliderContainer .swiper-slide {
     width: 100%;
@@ -2543,7 +2544,7 @@ height: 100%;
 
 
 
-
+ /*------------------------------  product page sec 3 footer----------------------------------- */
 
 
 
@@ -3225,6 +3226,7 @@ height: 100%;
 }
 .project #sec1{
     width: 100vw;
+    height: 46rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3286,6 +3288,7 @@ height: 80%;
 display: flex;
 justify-content: center;
 align-items: center;
+position: relative;
 }
 .project #sec1 .one .sliderContainer .swiper-slide {
     width: 100%;
@@ -3320,3 +3323,455 @@ align-items: center;
     width: 150px;
     height: 185px;
  }
+ .project #sec1 .one .row{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .project #sec1  .one .sliderContainer .swiper-slide {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .project #sec1 .one .row >img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .project #sec1 .one .row .row1{
+        position: absolute;
+        width: 35%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(270deg, transparent 0%,  #222226 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .project #sec1 .one .row .row1 img{
+        width: 150px;
+        height: 185px;
+     }
+
+      /*------------------------------ project page sec 2----------------------------------- */
+
+.project #sec2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.project #sec2 .two {
+    width:75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+.project #sec2 .two .projectTitle{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.project #sec2 .two .projectTitle h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--homeText);
+}
+.project #sec2 .two .projectDetail{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.project #sec2 .two .projectDetail p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 35px;
+    color: var(--homeText);
+    padding-left: 20rem;
+}
+
+/*------------------------------ project page sec 3----------------------------------- */
+.project #sec3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    max-width: 100%;
+}
+.project #sec3 .three{
+    width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 5fr;
+}
+.project #sec3 .three .col1{
+    width: 100%;
+    height: 100%;
+ }
+ .project #sec3 .three .col1 .sideMenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+    list-style-type: none;
+ }
+ .project #sec3 .three .col1 .sideMenu ul.menu__list{
+padding-right: 4rem;
+ display: grid;
+ gap: 10px;
+ position: relative;
+ }
+ .project #sec3 .three .col1 .sideMenu ul.menu__list li.menu__item{
+
+list-style-type: none;
+ color: var(--productSec2);
+ transition: color .8s ease 0s;
+ -webkit-transition: color .8s ease 0s;
+ -moz-transition: color .8s ease 0s;
+ -ms-transition: color .8s ease 0s;
+ -o-transition: color .8s ease 0s;
+}
+.project #sec3 .three .col1 .sideMenu ul.menu__list li.menu__item a{
+    color: var(--productSec2);
+}
+.project #sec3 .three .col1 .sideMenu ul.menu__list li.menu__item._active a{
+    color: var(--homeText) !important;
+}
+.project #sec3 .three .col1 .sideMenu ul.menu__list .menu__active {
+    position: absolute;
+    width: 3%;
+    height: 27%;
+    background-color: var(--homeafter);
+    top: -5%;
+    right: 18%;
+    transform: rotate(90deg);
+    transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -ms-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.project #sec3 .three .col2{
+    width: 90%;
+    height: 100%;
+}
+.project #sec3 .three .col2 .projectImages{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project #sec3 .three .col2 .projectImages .img{
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0;
+}
+.project #sec3 .three .col2 .projectImages .img img{
+    min-width: 100%;
+}
+
+/*------------------------------ project page sec 4----------------------------------- */
+.project #sec4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    align-items: center;
+}
+.project #sec4 .four{
+    width: 70%;
+    height: 100%;
+    transform: translateX(-60px);
+    
+}
+.project #sec4 .four .row1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project #sec4 .four .row1 .products{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer);
+}
+.project #sec4 .four .row1 .products .productsSlider,
+.project #sec4 .four .row1 .products .productsSlider .Swipertwo{
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+}
+.project #sec4 .four .row1 .products .productsSlider .Swipertwo .swiper-slide{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:0 2%;
+}
+.project #sec4 .four .row1 .products .productsSlider .Swipertwo .swiper-slide .image{
+    width: 155px;
+    height: 186px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project #sec4 .four .row1 .products .productsSlider .Swipertwo .swiper-slide .image img{
+    width: 75%;
+    height: 90%;
+}
+.project #sec4 .four .row1 .products .productsSlider .Swipertwo .swiper-slide .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project #sec4 .four .row1 .products .productsSlider .Swipertwo .swiper-slide .title h3{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+}
+.project #sec4 .four .row1 .titleRow{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+.project #sec4 .four .row1 .titleRow::before{
+    content: '';
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: var(--homeafter);
+    right: -1%;
+}
+.project #sec4 .four .row1 .titleRow  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--homeText);
+}
+
+
+/*------------------------------ project page sec 5 footer----------------------------------- */
+
+.project #sec5{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer);
+}
+.project #sec5 .footer{
+    width: 100%;
+    height: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 3fr 1fr;
+   gap: 15px;
+
+
+}
+.project #sec5 .footer .row1{
+    width: 80%;
+height: 100%;
+    display: grid;
+    grid-template-columns:1fr 3fr 3fr 1fr ;
+    grid-template-rows: auto;
+    justify-self: center;
+
+}
+.project #sec5 .footer .row2{
+    width: 90%;
+  
+}
+.project #sec5 .footer .row1 .col1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.project #sec5 .footer .row1 .col1 .logo{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3%;
+    margin-top: 2rem;
+    border-left: 1px solid var(--white);
+}
+.project #sec5 .footer .row1 .col2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+ 
+}
+.project #sec5 .footer .row1 .col2 ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10%;
+    align-items: flex-end;
+}
+.project #sec5 .footer .row1 .col2 ul li{
+    list-style-type: none;
+    padding: 0 3%;
+}
+.project #sec5 .footer .row1 .col2 ul li a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+.project #sec5 .footer .row1 .col3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.project #sec5 .footer .row1 .col3 .contactAdress{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.project #sec5 .footer .row1 .col3 .contactAdress p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+    width: 100%;
+    margin: 0;
+    padding-top: 1%;
+   
+}
+.project #sec5 .footer .row1 .col3 .contactPhone{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+    transform:translateY(-18%) ;
+    -webkit-transform:translateY(-18%) ;
+    -moz-transform:translateY(-18%) ;
+    -ms-transform:translateY(-18%) ;
+    -o-transform:translateY(-18%) ;
+}
+.project #sec5 .footer .row1 .col3 .contactPhone span:nth-child(1){
+    width: 7%;
+}
+.project #sec5 .footer .row1 .col3 .contactPhone a{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+}
+.project #sec5 .footer .row1 .col3 .contactPhone span:nth-child(2){
+    width: 10px;
+    height: 1px;
+    background-color: var(--white);
+}
+.project #sec5 .footer .row1 .col4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.project #sec5 .footer .row1 .col4 .socials{
+    margin-bottom: 16%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.project #sec5 .footer .row1 .col4 .socials img{
+    margin: 25% 0;
+}
+.project #sec5 .footer .row2{
+    width: 90%;
+    height: 100%;
+    justify-self: center;
+    display: flex;
+    border-top: 1px solid var(--white);
+    justify-content: center;
+    align-items: center;
+}
+.project #sec5 .footer .row2 .col1{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.project #sec5 .footer .row2 .col1 p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+}
+.project #sec5 .footer .row2 .col2 p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+}
+.project #sec5 .footer .row2 .col2{
+    width: 50%;
+    display: flex;
+    transform: translateX(13%);
+    justify-content: flex-end;
+    -webkit-transform: translateX(13%);
+    -moz-transform: translateX(13%);
+    -ms-transform: translateX(13%);
+    -o-transform: translateX(13%);
+}
+
+
+
