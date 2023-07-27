@@ -366,18 +366,19 @@ height: 100%;
     margin-top: -2rem;
 }
 .container #sec3 .three .row2 .products .productBox .productImage{
-   width: 100%;
+   width: 66%;
    height: 60%;
    display: flex;
    justify-content: center;
    align-items: center;
    object-fit: cover;
    object-fit: contain;
+   border: 1px solid var(--productSec2);
 }
 .container #sec3 .three .row2 .products .productBox .productImage img{
     object-fit: contain;
     max-width: 100%;
-    height: 100%;
+    height: 85%;
 }
 .container #sec3 .three .row2 .products .productBox .productName{
     width: 100%;
