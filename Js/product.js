@@ -38,6 +38,11 @@ cubeEffect: {
   shadowOffset: 20,
   shadowScale: 0.94,
 },
+scrollbar: {
+   el: '.swiper-scrollbar',
+   draggable: true,
+ 
+ },
 navigation: {
    nextEl: ".swiper-button-next",
    prevEl: ".swiper-button-prev",

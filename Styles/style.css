@@ -2510,13 +2510,18 @@ list-style-type: none;
     margin:0 2%;
 }
  .productsSlider .swiper-slide .image{
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.productsSlider .swiper .swiper-button-next::after,
+.productsSlider .swiper .swiper-button-prev::after,
+.productSlider .swiper .swiper-button-prev::after,
+.productSlider .swiper .swiper-button-next::after{
+color: var(--homeText);
+}
 
  .productsSlider .swiper-slide .image img{
     width: 75%;
@@ -3678,12 +3683,12 @@ list-style-type: none;
     background-color: var(--footer);
 }
 .project #sec4 .four .row1 .products .productsSlider,
-.project #sec4 .four .row1 .products .productsSlider .Swipertwo{
+.project #sec4 .four .row1 .products .productsSlider .Swiperone{
     width: 100%;
     height: 100%;
     padding-top: 1rem;
 }
-.project #sec4 .four .row1 .products .productsSlider .Swipertwo .swiper-slide{
+.project #sec4 .four .row1 .products .productsSlider .Swiperone .swiper-slide{
     width: 20%;
     height: 100%;
     display: flex;
@@ -3692,24 +3697,24 @@ list-style-type: none;
     flex-direction: column;
     margin:0 2%;
 }
-.project #sec4 .four .row1 .products .productsSlider .Swipertwo .swiper-slide .image{
-    width: 155px;
-    height: 186px;
+.project #sec4 .four .row1 .products .productsSlider .Swiperone .swiper-slide .image{
+    width:150px !important;
+    height: 150px !important;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.project #sec4 .four .row1 .products .productsSlider .Swipertwo .swiper-slide .image img{
+.project #sec4 .four .row1 .products .productsSlider .Swiperone .swiper-slide .image img{
     width: 75%;
     height: 90%;
 }
-.project #sec4 .four .row1 .products .productsSlider .Swipertwo .swiper-slide .title{
+.project #sec4 .four .row1 .products .productsSlider .Swiperone .swiper-slide .title{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.project #sec4 .four .row1 .products .productsSlider .Swipertwo .swiper-slide .title h3{
+.project #sec4 .four .row1 .products .productsSlider .Swiperone .swiper-slide .title h3{
   font-size: 16px;
   font-weight: 500;
   color: var(--white);
