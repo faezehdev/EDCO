@@ -2522,6 +2522,9 @@ list-style-type: none;
 .productSlider .swiper .swiper-button-next::after{
 color: var(--homeText);
 }
+.productsSlider .swiper .swiper-scrollbar-drag{
+    background-color: var(--homeafter);
+}
 
  .productsSlider .swiper-slide .image img{
     width: 75%;

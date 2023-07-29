@@ -26,9 +26,9 @@ let swiper1 = new Swiper(".Swipertwo", {
        clickable: true,
       
      },
-     slidesPerView: 3,
-     spaceBetween: 30,
-     loop: true,
+     slidesPerView:4,
+     spaceBetween: 60,
+   //   loop: true,
   
    //   effect: "cube",
 grabCursor: true,
