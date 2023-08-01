@@ -100,11 +100,24 @@ ul{
 }
 
 .container #sec1 .one header{
-    width: 80%;
-    height: 10%;
+    width: 100%;
+    height: 30%;
     display: grid;
     grid-template-columns:1fr 6fr;
+    gap: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
 
+}
+.container #sec1 .one header.active{
+    background-color: var(--white);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
 }
 .container #sec1 .one header nav{
 width: 100%;
@@ -134,7 +147,7 @@ height: 100%;
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     padding-top: 1rem;
 }
@@ -167,6 +180,7 @@ height: 100%;
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow-y: hidden;
 }
 .container #sec1 .one .row2 .title h3{
     font-size: 34px;
@@ -179,7 +193,7 @@ height: 100%;
     position: absolute;
     top: 61%;
     width: 3px;
-    height: 38%;
+    height: 0%;
     left: 22.1%;
     border-radius: 3px;
     background-color: var(--homeafter);
@@ -187,8 +201,22 @@ height: 100%;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    animation: line 4s 0s infinite linear;
+    -webkit-animation: line 4s 0s infinite linear;
+    transform-origin: bottom;
+    overflow-y: hidden;
 }
-
+@keyframes line{
+    0%{
+        height: 0%;
+    }
+    100%{ height: 38%; transform:translateY(100%) ;
+         -webkit-transform:translateY(100%) ;
+          -moz-transform:translateY(100%) ;
+           -ms-transform:translateY(100%) ;
+           -o-transform:translateY(100%) ;
+}
+}
 /*------------------------- section two------------------------------- */
 .container #sec2{
     width: 100vw;
@@ -897,17 +925,34 @@ height: 100%;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
+    justify-content: space-around;
     position: relative;
  
 }
 
 .catProduct #sec1 .one header{
-    width: 80%;
-    height: 15%;
+    width: 100%;
+    height:20vh;
     display: grid;
     grid-template-columns:1fr 6fr;
+    gap: 3rem;
+    position: fixed;
+    top: 0;
+    height: 15%;
+    left: 0;
+    z-index: 3;
+    background-color: var(--white);
 
 }
+/* .catProduct #sec1 .one header.active{
+    background-color: var(--white);
+    transition: all .5s ease;
+    height: 15%;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+} */
 .catProduct #sec1 .one header nav{
 width: 100%;
 height: 100%;
@@ -936,13 +981,14 @@ height: 100%;
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     padding-top: 1rem;
 }
 .catProduct #sec1 .one .sliderContainer{
     width: 100%;
     height: 620px;
+    margin-top: 6rem;
 }
 .catProduct #sec1 .one .sliderContainer .swiper {
     width: 100%;
@@ -1007,7 +1053,7 @@ height: 100%;
    
 }
 .catProduct #sec2 .two{
-    width: 80%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -1047,10 +1093,11 @@ height: 100%;
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: center;
 
 }
 .catProduct #sec2 .two .row2 .products{
-  width: 100%;
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(4,1fr);
  
@@ -1063,6 +1110,19 @@ height: 100%;
     justify-content: center;
     align-items: center;
     margin-top: -2rem;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+.catProduct #sec2 .two .row2 .products .productBox.active{
+    opacity: 1 !important;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
 }
 .catProduct #sec2 .two .row2 .products .productBox .productImage{
    width: 100%;
@@ -1874,7 +1934,7 @@ height: 100%;
 .listProduct #sec2 .two .row2 .productContainer{
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     justify-content: center;
     align-items: center;
     gap: 4rem;
@@ -1887,6 +1947,11 @@ height: 100%;
     width: 100%;
     height: 100%;
     margin: 2rem 0;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
 }
 .listProduct #sec2 .two .row2 .productContainer .product .productImage{
     width:20rem;
@@ -1896,9 +1961,17 @@ height: 100%;
     align-items: center;
 }
 .listProduct #sec2 .two .row2 .productContainer .product .productImage img{
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 75%;
     max-width: 100%;
+}
+.listProduct #sec2 .two .row2 .productContainer .product.active{
+    opacity: 1 !important;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
 }
 .listProduct #sec2 .two .row2 .productContainer .product .productDetail{
     width: 100%;

@@ -1,33 +1,4 @@
-
-let swiper = new Swiper(".mySwiper", {
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-       
-      },
-      spaceBetween: 50,
-    //   effect: "cube",
- grabCursor: true,
- cubeEffect: {
-   shadow: true,
-   slideShadows: true,
-   shadowOffset: 20,
-   shadowScale: 0.94,
- },
- navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-const nav =document.querySelector('#nav')
-window.addEventListener('scroll',()=>{
-    if (window.scrollY > nav.offsetTop) {    
-        nav.classList.add('active');
-      } else {
-        nav.classList.remove('active');    
-      }
-})
-let product = document.getElementsByClassName('productBox')
+let product = document.getElementsByClassName('product')
 for(let i = 0; i<product.length;i++){
     product[i].addEventListener('mouseover',(e)=>{
     e.stopPropagation()
@@ -54,7 +25,7 @@ for(let i = 0; i<product.length;i++){
 
     })
 }
-const row = document.querySelector('.catProduct .row2')
+const row = document.querySelector('.listProduct #sec2 .two .row2')
 row.addEventListener('mouseover',(e)=>{
   
         for(let i = 0; i<product.length;i++){{
@@ -62,4 +33,12 @@ row.addEventListener('mouseover',(e)=>{
         }
     }
    
+})
+const nav =document.querySelector('#nav')
+window.addEventListener('scroll',()=>{
+    if (window.scrollY > nav.offsetTop) {    
+        nav.classList.add('active');
+      } else {
+        nav.classList.remove('active');    
+      }
 })
