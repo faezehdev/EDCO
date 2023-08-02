@@ -86,7 +86,7 @@ ul{
 .container #sec1 .one {
     width:100%;
     height: 100%;
-    background-image: url('../Assets/Pictures/Home/1.png');
+    background-image: url('../assets/pictures/1.png');
     background-repeat: no-repeat;
     background-position:1% 38%;
     background-size: cover;
@@ -101,7 +101,7 @@ ul{
 
 .container #sec1 .one header{
     width: 100%;
-    height: 30%;
+    /* height: 30%; */
     display: grid;
     grid-template-columns:1fr 6fr;
     gap: 3rem;
@@ -230,7 +230,7 @@ height: 100%;
 .container #sec2 .two{
     width: 100%;
     height: 100%;
-    background-image: url('../Assets/Pictures/Home/post2.png');
+    /* background-image: url('../Assets/Pictures/Home/post2.png'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -239,6 +239,12 @@ height: 100%;
     display: flex;
     flex-direction: column;
     
+}
+.container #sec2 .two img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
 }
 .container #sec2 .two .overlay{
     position: absolute;
@@ -255,6 +261,9 @@ height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .container #sec2 .two .content .textBox{
     width: 511px;
@@ -266,6 +275,7 @@ height: 100%;
     justify-content: center;
     align-items: center;
     position: relative;
+    direction: ltr;
 }
 .container #sec2 .two .content .textBox .title{
     width: 85%;
@@ -318,11 +328,45 @@ height: 100%;
     border: 2px solid var(--homeafter);
     background-color: transparent;
     margin-left: 2.5rem;
+    position: relative;
 }
+.container #sec2 .two .content .textBox .btn button::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    background-color: var(--homeafter);
+    height: 100%;
+    transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    z-index: 111;
+}
+.container #sec2 .two .content .textBox .btn button:hover{
+    cursor: pointer;
+}
+.container #sec2 .two .content .textBox .btn button:hover::after{
+width: 100% !important;
+}
+.container #sec2 .two .content .textBox .btn button:hover a{
+
+    }
 .container #sec2 .two .content .textBox .btn button a{
     color: var(--white);
     font-size: 16px;
     font-weight: 500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
 }
 
 /*------------------------- section three------------------------------- */
@@ -337,7 +381,7 @@ height: 100%;
    
 }
 .container #sec3 .three{
-    width: 80%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -379,10 +423,11 @@ height: 100%;
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: center;
 
 }
 .container #sec3 .three .row2 .products{
-  width: 100%;
+  width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows:5fr 5fr ;
@@ -396,6 +441,61 @@ height: 100%;
     align-items: center;
     margin-top: -2rem;
 }
+.container #sec3 .three .row2 .products .fade-in{
+    opacity: 0 !important;
+    transform: translateY(-10%)!important;
+    transition:transform .5ms ease, opacity 250ms ease-in;
+    -webkit-transition:transform .5ms ease, opacity 250ms ease-in;
+    -moz-transition:transform .5ms ease, opacity 250ms ease-in;
+    -ms-transition:transform .5ms ease, opacity 250ms ease-in;
+    -o-transition:transform .5ms ease, opacity 250ms ease-in;
+    -webkit-transform: translateY(-10%)!important;
+    -moz-transform: translateY(-10%)!important;
+    -ms-transform: translateY(-10%)!important;
+    -o-transform: translateY(-10%)!important;
+}
+.container #sec3 .three .row2 .products .fade-in.appear{
+    opacity: 1 !important;
+    transform: translateY(0%) !important;
+    -webkit-transform: translateY(0%) !important;
+    -moz-transform: translateY(0%) !important;
+    -ms-transform: translateY(0%) !important;
+    -o-transform: translateY(0%) !important;
+}
+.container #sec3 .three .row2 .products .productBox:hover{
+    cursor: pointer;
+}
+.container #sec3 .three .row2 .products .productBox.hover{
+    opacity: .6 !important;
+}
+.container #sec3 .three .row2 .products .productBox.active{
+    opacity: 1   !important ;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+
+.cursor{
+    --size: 50px;
+    position: fixed;
+    top: calc(var(--size) / -2);
+    left: calc(var(--size) / -2);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px white;
+    pointer-events: none;
+    transition: top 0.15s ease-out, left 0.15s ease-out, width 0.15s ease-out,
+      height 0.15s ease-out, background-color 0.15s ease-out;
+    z-index: 999;
+display: none;
+   
+  mix-blend-mode: difference;
+}
+
 .container #sec3 .three .row2 .products .productBox .productImage{
    width: 66%;
    height: 60%;
@@ -405,6 +505,11 @@ height: 100%;
    object-fit: cover;
    object-fit: contain;
    border: 1px solid var(--productSec2);
+   transition: transition .5s ease-in-out;
+   -webkit-transition: transition .5s ease-in-out;
+   -moz-transition: transition .5s ease-in-out;
+   -ms-transition: transition .5s ease-in-out;
+   -o-transition: transition .5s ease-in-out;
 }
 .container #sec3 .three .row2 .products .productBox .productImage img{
     object-fit: contain;
@@ -437,9 +542,38 @@ height: 100%;
 }
 .container #sec3 .three .row3 .productALLbtn button,
 .container #sec4 .four .projects .projectALLbtn button{
-   padding:.8rem 1rem ;
+   padding:1.5rem 1rem ;
+   width: 13%;
+   height: 100%;
   background-color: transparent;
   border: 1px solid var(--homeafter);
+  position: relative;
+}
+.container #sec4 .four .projects .projectALLbtn button{
+    width: 15% !important;
+}
+.container #sec3 .three .row3 .productALLbtn button::after,
+.container #sec4 .four .projects .projectALLbtn button::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--homeafter);
+    transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+}
+.container #sec3 .three .row3 .productALLbtn button:hover::after,
+.container #sec4 .four .projects .projectALLbtn button:hover::after{
+    width: 100%;
+}
+.container #sec3 .three .row3 .productALLbtn button:hover a,
+.container #sec4 .four .projects .projectALLbtn button:hover a{
+    color: var(--white);
 }
 .container #sec3 .three .row3 .productALLbtn button a,
 .container #sec4 .four .projects .projectALLbtn button a{
@@ -452,7 +586,15 @@ height: 100%;
      font-size: 16px;
      font-weight: 500;
      line-height: 26.78px;
-  
+     position: absolute;
+       z-index: 1000;
+     top: 0;
+     transition: all .5s ease-in;
+     -webkit-transition: all .5s ease-in;
+     -moz-transition: all .5s ease-in;
+     -ms-transition: all .5s ease-in;
+     -o-transition: all .5s ease-in;
+     left: 0;
 }
 .container #sec3 .three .row3 .productALLbtn button a img,
 .container #sec4 .four .projects .projectALLbtn button a img{
@@ -518,7 +660,21 @@ align-items: center;
     justify-content: center;
     align-items: center;
     object-fit: cover;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
 }
+
+.container #sec4 .four .projects .project .projectImage:hover{
+    transform: scale(1.09);
+    -webkit-transform: scale(1.09);
+    -moz-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    -o-transform: scale(1.09);
+    cursor: pointer;
+  }
 .container #sec4 .four .projects .project .projectImage img{
     max-width: 100%;
  width: 100%;
@@ -527,6 +683,7 @@ align-items: center;
 .container #sec4 .four .projects .project .projectName{
     width: 100%;
     position: relative;
+    height: 100%;
     bottom: 0;
     left: 0;
     display: flex;
@@ -569,7 +726,7 @@ align-items: center;
     border-radius: 3px;
     background-color: var(--homeafter);
     -webkit-border-radius: 3px;
-    top: -60%;
+    top: -120%;
 }
 
 
@@ -649,6 +806,7 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    direction: ltr;
 }
 .container #sec6 .six .posts .post .postImage{
     width: 100%;
@@ -698,7 +856,7 @@ align-items: center;
 }
 .container #sec6 .six .posts .post .postBtn button{
     background-color: transparent;
-    border-bottom: 2px solid var(--homeafter);
+    border-bottom: 0px solid var(--homeafter);
     border-top: none;
     border-left: none;
     border-radius: 2px;
@@ -708,6 +866,32 @@ align-items: center;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
     padding: .3rem;
+    -webkit-transition: border .4s ease;
+    -moz-transition: border .4s ease;
+    -o-transition: border .4s ease;
+    transition: border .4s ease;
+    -ms-transition: border .4s ease;
+    position: relative;
+}
+.container #sec6 .six .posts .post .postBtn button::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--homeafter);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.container #sec6 .six .posts .post .postBtn button:hover::after{
+   width: 0%;
+}
+.container #sec6 .six .posts .post .postBtn button a{
+    color: var(--homeText);
 }
 .container #sec6 .six .posts .post .postBtn button:hover{
     cursor: pointer;
@@ -833,6 +1017,7 @@ height: 100%;
     font-size: 14px;
     font-weight: 400;
     color: var(--white);
+    margin-right: .5rem;
 }
 .container #sec7 .footer .row1 .col3 .contactPhone span:nth-child(2){
     width: 10px;
