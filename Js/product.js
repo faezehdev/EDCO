@@ -48,16 +48,27 @@ navigation: {
    prevEl: ".swiper-button-prev",
  },
 });
-
+scrollPos = (el)=>{
+  el.scrollIntoView({
+    block:'center',
+    behavior:'smooth',
+   
+  })
+}
 const btnContainer = document.getElementsByClassName('menu__list');
 let btns = btnContainer[0].getElementsByClassName('menu__link');
 let menuActive = document.getElementsByClassName('menu__active')
+let current = document.getElementsByClassName('_active')
 for(let i=0;i<btns.length ; i++){
   btns[i].addEventListener('click',()=>{
-    let current = document.getElementsByClassName('active')
-    current[0].className = current[0].className.replace(" active", "")
-    btns[i].className += ' active'
-    console.log(current[0].className);
+    
+     current[0].className = current[0].className.replace('_active', '')
+     btns[i].className += ' _active'
+   
+     let element = document.getElementsByClassName('scroll')[i];
+   
+window.scrollTo(0, element.offsetTop -document.getElementsByClassName('fixed-element')[0].offsetHeight)
+    
   })
  
 
@@ -70,3 +81,24 @@ for(let i=0;i<btns.length ; i++){
           nav.classList.remove('active');    
         }
   })
+
+
+const sec2 =document.querySelector('#sec2')
+  const sidemenu =document.querySelector('.sideMenu')
+  window.addEventListener('scroll',(e)=>{
+
+    if (window.scrollY >690.4000244140625) {    
+        sidemenu.classList.add('sticky');
+      } else {
+        sidemenu.classList.remove('sticky');    
+      }
+})
+
+const internalLinks=document.querySelectorAll('.scroll')
+// internalLinks.forEach((link)=>{
+//   link.scrollIntoView({
+//     behavior:'smooth',
+//     block:'center'
+//   })
+//   console.log(link);
+// })

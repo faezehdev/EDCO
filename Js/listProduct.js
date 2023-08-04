@@ -14,7 +14,7 @@ let hover = (Currentelem)=>{
             product[i].classList.add('active')
         }
         
-        product[i].style.opacity='.7'
+        product[i].classList.add('hover')
     }
 }
 for(let i = 0; i<product.length;i++){
@@ -29,7 +29,7 @@ const row = document.querySelector('.listProduct #sec2 .two .row2')
 row.addEventListener('mouseover',(e)=>{
   
         for(let i = 0; i<product.length;i++){{
-            product[i].style.opacity='1'
+          product[i].classList.remove('hover')
         }
     }
    
@@ -42,3 +42,23 @@ window.addEventListener('scroll',()=>{
         nav.classList.remove('active');    
       }
 })
+const appearOptions ={
+    rootMargin: "0px",
+    threshold:.75,
+  }
+  let t =0
+  const faders = document.querySelectorAll('.fade-in')
+  const appearOnScroll=new IntersectionObserver((entries,appearOnScroll)=>{
+  entries.forEach((entry)=>{
+  if(!entry.isIntersecting){
+    return
+  }else{ 
+      entry.target.classList.add('appear')
+    appearOnScroll.unobserve(entry.target)
+    }
+  })
+  },appearOptions)
+  faders.forEach((fader)=>{
+  appearOnScroll.observe(fader)
+  })
+  

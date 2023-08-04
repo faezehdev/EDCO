@@ -6,3 +6,26 @@ window.addEventListener('scroll',()=>{
         nav.classList.remove('active');    
       }
 })
+
+
+// play pause video
+
+const playBTN =document.getElementById("PlayPuase")
+const video = document.getElementById("video-elem")
+const pauseBtn = document.querySelector('.aboutUs .three .col1')
+playBTN.addEventListener('click',(e)=>{
+  e.stopPropagation()
+    video.play()
+   
+    playBTN.style.display='none'
+    pauseBtn.addEventListener('click',(e)=>{
+    
+      video.pause()
+     
+      playBTN.style.display='flex'
+    })
+    
+})
+video.addEventListener('click' , ()=>{
+    playBTN.style.display='flex'
+})
