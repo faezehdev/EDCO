@@ -66,8 +66,9 @@ for(let i=0;i<btns.length ; i++){
      btns[i].className += ' _active'
    
      let element = document.getElementsByClassName('scroll')[i];
-   
-window.scrollTo(0, element.offsetTop -document.getElementsByClassName('fixed-element')[0].offsetHeight)
+  element= element.getBoundingClientRect()
+   console.log(element.top + document.getElementsByClassName('fixed-element')[0].offsetHeight);
+window.scrollTo(0, element.top + document.getElementsByClassName('fixed-element')[0].offsetHeight+10)
     
   })
  
