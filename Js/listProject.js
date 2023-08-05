@@ -1,12 +1,13 @@
 const btnContainer = document.getElementsByClassName('menu__list');
 let btns = btnContainer[0].getElementsByClassName('menu__link');
 let menuActive = document.getElementsByClassName('menu__active')
+let current = document.getElementsByClassName('_active')
 for(let i=0;i<btns.length ; i++){
   btns[i].addEventListener('click',()=>{
-    let current = document.getElementsByClassName('active')
-    current[0].className = current[0].className.replace(" active", "")
-    btns[i].className += ' active'
-    console.log(current[0].className);
+   
+    current[0].className = current[0].className.replace('_active', '')
+    btns[i].className += ' _active'
+    menuActive[0].style.top=`calc(13px + ${i*27}px)`
   })
  
 
@@ -19,3 +20,14 @@ for(let i=0;i<btns.length ; i++){
           nav.classList.remove('active');    
         }
   })
+   
+ 
+  const sidemenu =document.querySelector('.list-project .sideMenu')
+  window.addEventListener('scroll',(e)=>{
+console.log(window.scrollY );
+    if (window.scrollY >100) {    
+        sidemenu.classList.add('sticky');
+      } else {
+        sidemenu.classList.remove('sticky');    
+      }
+})
