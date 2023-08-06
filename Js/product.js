@@ -60,17 +60,18 @@ let btns = btnContainer[0].getElementsByClassName('menu__link');
 let menuActive = document.getElementsByClassName('menu__active')
 let current = document.getElementsByClassName('_active')
 for(let i=0;i<btns.length ; i++){
+  // HTMLElement.style.scrollPadding='10vh'
   btns[i].addEventListener('click',()=>{
     
      current[0].className = current[0].className.replace('_active', '')
      btns[i].className += ' _active'
      menuActive[0].style.top=`calc(38px + ${i*28}px)`
-     let element = document.getElementsByClassName('scroll')[i];
-  element= element.getBoundingClientRect()
-   console.log(element.top+ document.getElementsByClassName('fixed-element')[0].offsetHeight);
-   let sc =element.top+ document.getElementsByClassName('fixed-element')[0].offsetHeight
-  //  .top- document.getElementsByClassName('fixed-element')[0].offsetHeight?
-window.scrollTo(0, sc+`100px`)
+//      let element = document.getElementsByClassName('scroll')[i];
+//   element= element.getBoundingClientRect()
+//    console.log(element.top+ document.getElementsByClassName('fixed-element')[0].offsetHeight);
+//    let sc =element.top+ document.getElementsByClassName('fixed-element')[0].offsetHeight
+//    .top- document.getElementsByClassName('fixed-element')[0].offsetHeight?
+// window.scrollTo(0, sc+`100px`)
 
   })
  
@@ -80,7 +81,7 @@ window.scrollTo(0, sc+`100px`)
   window.addEventListener('scroll',()=>{
       if (window.scrollY > nav.offsetTop) {    
           nav.classList.add('active');
-         
+          // window.scroll(0,10)
           if(window.scrollY>=700){
            
             current[0].className = current[0].className.replace('_active', '')
