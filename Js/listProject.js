@@ -1,3 +1,13 @@
+gsap.registerPlugin( ScrollTrigger);
+const locoscroll = new LocomotiveScroll({
+  el:document.querySelector('.list-project'),
+  smooth:true
+})
+//gsap-----------------------------------------------------------------
+gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
+gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
+gsap.from('.container #sec1 .one header nav ul li a::after',{duration:2,width:0})
+
 const btnContainer = document.getElementsByClassName('menu__list');
 let btns = btnContainer[0].getElementsByClassName('menu__link');
 let menuActive = document.getElementsByClassName('menu__active')
@@ -34,27 +44,34 @@ console.log(window.scrollY );
       }
 })
 
-
-const cursorcontainer = document.querySelectorAll(".list-project .projectBoxes .box");
-const cursorBorder = document.querySelector(".cursor");
-const cursorPos = { x: 0, y: 0 };
-const cursorBorderPos = { x: 0, y: 0 };
-for(let i=0;i<cursorcontainer.length;i++){
-  cursorcontainer[i].addEventListener("mousemove", (e) => {
-    cursorBorder.style.display="flex"
-    cursorPos.x = e.clientX;
-    cursorPos.y = e.clientY;
-  });
-  cursorcontainer[i].addEventListener("mouseleave", (e) => {
-    cursorBorder.style.display="none"
-    
-  });
+let gcursorcontainer = gsap.utils.toArray('.box')
+let gcursor =document.querySelector(".cursor");
+let moveCursor = (e)=>{
+  gcursor.style.display='flex'
+let mouseX=e.clientX
+let mouseY=e.clientY
+tl =gsap.timeline()
+tl.to(
+  gcursor, {
+    duration:1,
+    x:mouseX,
+    y:mouseY,
+    ease:Expo.ease
+  }
+)
 }
-requestAnimationFrame(function loop() {
-  const easting = 8;
-  cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / easting;
-  cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / easting;
-
-  cursorBorder.style.transform = `translate(${cursorBorderPos.x}px, ${cursorBorderPos.y}px)`;
-  requestAnimationFrame(loop);
-});
+let initAnim =()=>{
+  gcursorcontainer.forEach((item)=>{
+item.addEventListener('mousemove',moveCursor)
+  })
+}
+let init=()=>{
+  initAnim()
+ 
+}
+window.addEventListener('load',init())
+for(let i=0;i<gcursorcontainer.length;i++){
+  gcursorcontainer[i].addEventListener('mouseleave',()=>{
+    gcursor.style.display='none'
+})
+}

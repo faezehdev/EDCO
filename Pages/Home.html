@@ -3,41 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link
+  rel="stylesheet"
+  href="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.css"
+/>
+    <link rel="stylesheet" href="../css/style.css">
     <title>ادکو</title>
 </head>
-<body>
+<body >
     <div class="container">
+     
         <section id="sec1">
           <div class="one">
             <header id="nav">
                 <div class="logo">
-                    <img src="../images/pictures/Logo.png" alt="">
+                    <img src="../images/Logo.png" alt="">
                 </div>
                 <nav>
                     <ul>
                         <li>
-                            <a href="../pages/List-Product.html">
+                            <a href="../pages/List-Product.html" data-text="products">
                                 products
                             </a>
                         </li>
                         <li>
-                            <a href="../pages/List-Project.html">
+                            <a href="../pages/List-Project.html" data-text="projects">
                                projects
                             </a>
                         </li>
                         <li>
-                            <a href="../pages/List-Article.html">
+                            <a href="../pages/List-Article.html" data-text="articles">
                                 articles
                             </a>
                         </li>
                         <li>
-                            <a href="../pages/AboutUs.html">
+                            <a href="../pages/AboutUs.html" data-text="about us">
                                 about us
                             </a>
                         </li>
                         <li>
-                            <a href="../pages/ContactUs.html">
+                            <a href="../pages/ContactUs.html" data-text="contact us">
                               contact us
                             </a>
                         </li>
@@ -46,7 +51,7 @@
             </header>
                 <div class="row1">
                     <div class="img">
-                        <img src="../images/pictures/_DSC0053 1.png" alt="">
+                        <img src="../images/_DSC0053 1.png" alt="">
                     </div>
                 </div>
                 <div class="row2">
@@ -60,7 +65,7 @@
         </section>
         <section  id="sec2">
             <div class="two">
-                <img src="../images/pictures/post2.png" alt="">
+                <img src="../images/post2.png" alt="">
                 <div class="overlay"></div>
                 <div class="content">
                     <div class="textBox">
@@ -92,49 +97,49 @@
                 </div>
                 <div class="row2">
                     <div class="products">
-                        <div class="productBox fade-in" id="1">
+                        <div class="productBox fade-in">
                             <div class="productImage">
-                                <img src="../images/pictures/80 1 (5).png" alt="">
+                                <img src="../images/80 1 (5).png" alt="">
                             </div>
                             <div class="productName">
                                 <p>Ds55</p>
                             </div>
                         </div>
-                        <div class="productBox fade-in" id="2">
+                        <div class="productBox fade-in">
                             <div class="productImage">
-                                <img src="../images/pictures/80 1 (5).png" alt="">
+                                <img src="../images/80 1 (5).png" alt="">
                             </div>
                             <div class="productName">
                                 <p>Ds55</p>
                             </div>
                         </div>
-                        <div class="productBox fade-in" id="3">
+                        <div class="productBox fade-in">
                             <div class="productImage">
-                                <img src="../images/pictures/80 1.png" alt="">
+                                <img src="../images/80 1.png" alt="">
                             </div>
                             <div class="productName">
                                 <p>X1</p>
                             </div>
                         </div>
-                        <div class="productBox fade-in" id="4">
+                        <div class="productBox fade-in">
                             <div class="productImage">
-                                <img src="../images/pictures/80 1 (5).png" alt="">
+                                <img src="../images/80 1 (5).png" alt="">
                             </div>
                             <div class="productName">
                                 <p>Ds55</p>
                             </div>
                         </div>
-                        <div class="productBox fade-in" id="5">
+                        <div class="productBox fade-in">
                             <div class="productImage">
-                                <img src="../images/pictures/80 1 (6).png" alt="">
+                                <img src="../images/80 1 (6).png" alt="">
                             </div>
                             <div class="productName">
                                 <p>X Class</p>
                             </div>
                         </div>
-                        <div class="productBox fade-in" id="6">
+                        <div class="productBox fade-in">
                             <div class="productImage">
-                                <img src="../images/pictures/80 1 (3).png" alt="">
+                                <img src="../images/80 1 (3).png" alt="">
                             </div>
                             <div class="productName">
                                 <p>Elegant</p>
@@ -145,10 +150,10 @@
                 </div>
                 <div class="row3">
                     <div class="productALLbtn">
-                        <button type="button">
+                        <button type="button" class="arrow">
                             <a href="../pages/List-Product.html">
                                show more products
-                                <img src="../images/icon/chevron-left-solid.svg" alt="">
+                                <img src="../images/chevron-left-solid.svg" alt="" class="ar">
                             </a>
                         </button>
                     </div>
@@ -165,28 +170,29 @@
                 <div class="projects">
                     <div class="project right">
                         <div class="projectImage ">
-                            <img src="../images/pictures/project1 (2).png" alt="">
+                            <img src="../images/project1 (2).png" alt="">
                         </div>
                         <div class="projectName">
                             <h3 class="right">mr eftekhari project</h3>
                         </div>
-                        <div class="cursor"></div>
+                        
                     </div>
                     <div class="project left ">
                         <div class="projectImage ">
                           
-                            <img src="../images/pictures/project5.PNG" alt="">
+                            <img src="../images/project5.PNG" alt="">
                         </div>
                         <div class="projectName">
                             <h3 class="left">mr eftekhari project</h3>
                         </div>
-                        <div class="cursor"></div>
+                        
                     </div>
+                    <div class="cursor"></div>
                     <div class="projectALLbtn">
-                        <button type="button">
+                        <button type="button" class="arrow">
                             <a href="../pages/List-Project.html">
                             show more projects
-                                <img src="../images/icon/chevron-left-solid.svg" alt="">
+                                <img src="../images/icons8-left-arrow-30.png" alt="" class="ar">
                             </a>
                         </button>
                     </div>
@@ -195,12 +201,13 @@
         </section>
         <section id="sec5">
             <div class="five">
-                <video id="video-elem" poster="../images/pictures/asadi.png">
+                <div class="overlay"></div>
+                <video id="video-elem" poster="../images/asadi.png">
                     <source src="../images/home page.mp4">
                 </video>
                 <div class="videoControl">
                     <button id="PlayPuase" >
-                        <img src="../images/icon/icons8-play-video-50.png"  alt="">
+                        <img src="../images/play.png"  alt="">
                     </button>
                 </div>
             </div>
@@ -209,58 +216,55 @@
             <div class="six">
                 <div class="posts">
                     <div class="post">
-                        <a href="../pages/Article.html">
                         <div class="postImage">
-                            <img src="../images/pictures/post1.png" alt="">
+                            <img src="../images/post1.png" alt="">
                         </div>
                         <div class="postTitle">
                             <h3>Introducing the types of high voltage cables and their applications</h3>
                         </div>
                         <div class="postDetail">
                             <p>Types of high voltage cables and their application in different industries. High voltage cables are used when high voltage energy transmission…</p>
-                        </div>
+                        </div>               
                         <div class="postBtn">
                             <button>
                                 <a href="../pages/Article.html">show more</a>
                             </button>
                         </div>
-                    </a>
+                   
                     </div>
-                    <div class="post">
-                        <a href="../pages/Article.html">
+                    <div class="post">                    
                         <div class="postImage">
-                            <img src="../images/pictures/Rectangle 6821 (2).png" alt="">
+                            <img src="../images/Rectangle 6821 (2).png" alt="">
                         </div>
                         <div class="postTitle">
                             <h3>When lighting the view from the projector...</h3>
                         </div>
                         <div class="postDetail">
                             <p>Types of high voltage cables and their application in different industries. High voltage cables are used when high voltage energy transmission…</p>
-                        </div>
+                        </div>                   
                         <div class="postBtn">
                             <button>
                                 <a href="../pages/Article.html">show more</a>
                             </button>
                         </div>
-                    </a>
+                    
                     </div>
-                    <div class="post">
-                        <a href="../pages/Article.html">
+                    <div class="post">                     
                         <div class="postImage">
-                            <img src="../images/pictures/post3.png" alt="">
+                            <img src="../images/post3.png" alt="">
                         </div>
                         <div class="postTitle">
                             <h3>When lighting the view from the projector...</h3>
                         </div>
                         <div class="postDetail">
                             <p>Types of high voltage cables and their application in different industries. High voltage cables are used when high voltage energy transmission…</p>
-                       </div>
+                       </div>                 
                         <div class="postBtn">
                             <button>
                                 <a href="../pages/Article.html">show more</a>
                             </button>
                         </div>
-                    </a>
+                   
                     </div>
                 </div>
             </div>
@@ -270,7 +274,7 @@
                 <div class="row1">
                     <div class="col1">
                         <div class="logo">
-                            <img src="../images/icon/Layer_x0020_1.png" alt="">
+                            <img src="../images/Layer_x0020_1.png" alt="">
                         </div>
                     </div>
                     <div class="col2">
@@ -310,16 +314,16 @@
                         </div>
                         <div class="contactPhone">
                             <span>phone:</span>
-                            <a href="">22793710</a>
+                            <a href="tel:+02122793710">22793710</a>
                             <span>-</span>
-                            <a href="">22793944</a>
+                            <a href="tel:+02122793944">22793944</a>
                         </div>
                     </div>
                     <div class="col4">
                         <div class="socials">
-                            <img src="../images/icon/whatsapp.png" alt="">
-                            <img src="../images/icon/instagram.png" alt="">
-                            <img src="../images/icon/telfooter.png" alt="">
+                            <img src="../images/whatsapp.png" alt="">
+                            <img src="../images/instagram.png" alt="">
+                            <img src="../images/telfooter.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -335,6 +339,10 @@
         </section>
 
     </div>
-    <script src="../Js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="../js/ScrollTrigger.min.js"></script>
+    <script src="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+  
+    <script src="../js/index.js"></script>
 </body>
 </html>
