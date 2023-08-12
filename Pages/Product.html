@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="mouseCircle"></div>
-    <header id="nav">
+    <header id="nav" data-scroll-sticky >
         <div class="logo">
             <img src="../images/Logo.png" alt="">
         </div>
@@ -49,9 +49,9 @@
     </header>
     <main>
     <div class="product" data-scroll-container>
-        <section id="sec1"  data-scroll-section>
+        <section id="sec1"  data-scroll-section >
             <div class="one" data-scroll>
-                <div class="row">
+                <div class="row"  id="list">
                     <img src="../images/post2.png" alt="">
                     <div class="row1">
                         <img src="../images/80 1 (5).png" alt="">
@@ -59,31 +59,31 @@
                 </div>
             </div>
         </section>
-        <section id="sec2" data-scroll-section>
-            <div class="two" data-scroll>
-             <div class="col1">
-              <div class="sideMenu">
+        <section id="sec2" data-scroll-section >
+            <div class="two" data-scroll >
+             <div class="col1" >
+              <div class="sideMenu"  data-scroll data-scroll-sticky  >
                 <ul class="menu__list">
                     <li  class="menu__item  ">
-                        <a href="#introduce" class="menu__link _active" >
+                        <a href="#introduce" class="menu__link _active" data-scroll-to data-menu-target="#introduce">
                            introduce
                         </a>
                       
                     </li>
                     <li class="menu__item ">
-                        <a href="#TechnicalSpecifications" class="menu__link">
+                        <a href="#TechnicalSpecifications" class="menu__link"  data-scroll-to data-menu-target="#TechnicalSpecifications">
                             Technical Specifications
                         </a>
                
                     </li>
                     <li class="menu__item">
-                        <a href="#RelatedProducts" class="menu__link">
+                        <a href="#RelatedProducts" class="menu__link"   data-scroll-to data-menu-target="#RelatedProducts">
                             Related products
                         </a>
                     
                     </li>
                     <li class="menu__item">
-                        <a href="#RelatedProjects" class="menu__link">
+                        <a href="#RelatedProjects" class="menu__link"  data-scroll-to data-menu-target="#RelatedProjects">
                             Related projects
                         </a>
                      

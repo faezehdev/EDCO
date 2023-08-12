@@ -13,7 +13,7 @@ if (document.querySelector(`[data-scroll-container]`) != undefined) {
           } else {
               document.querySelector(`header`).classList.remove('active')
           }
-          if (scrTop >690.4000244140625) {    
+          if (scrTop >1000) {    
             sidemenu.classList.add('sticky');
           } else {
             sidemenu.classList.remove('sticky');    
@@ -22,7 +22,7 @@ if (document.querySelector(`[data-scroll-container]`) != undefined) {
   })
 }
 
-let swiper = new Swiper(".Swiperone", {
+let swiper = new Swiper(".Swipertwo", {
     pagination: {
        
         clickable: true,

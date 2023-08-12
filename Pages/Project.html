@@ -9,6 +9,7 @@
     href="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.css"
   />
   <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.css">
   <link rel="stylesheet" href="../css/locomotive-scroll.css">
     <link rel="stylesheet" href="../css/style.css">
    
@@ -74,35 +75,36 @@
         </section>
         <section id="sec3"  data-scroll-section>
             <div class="three" data-scroll>
-                <div class="col1" data-scroll>
-                    <div class="sideMenu">
+                <div class="col1" data-scroll  id="section-1">
+                  
+                    <div class="sideMenu" class="sticky" data-scroll data-scroll-sticky data-scroll-target="#section-1">
                         <ul class="menu__list">
                             <li  class="menu__item  ">
-                                <a href="#picOne" class="menu__link __active" >
+                                <a href="#picOne" data-scroll-to data-menu-target="#picOne" class="menu__link __active" >
                                 picture 1
                                 </a>
                                 <!-- <span class="menu__active"></span> -->
                             </li>
                             <li class="menu__item ">
-                                <a href="#picTwo" class="menu__link">
+                                <a href="#picTwo"  data-scroll-to data-menu-target="#picTwo" class="menu__link">
                                     picture 2
                                 </a>
                                 <!-- <span class="menu__active"></span> -->
                             </li>
                             <li class="menu__item">
-                                <a href="#picThree" class="menu__link">
+                                <a href="#picThree"  data-scroll-to data-menu-target="#picThree" class="menu__link">
                                     picture 3
                                 </a>
                                 <!-- <span class="menu__active"></span> -->
                             </li>
                             <li class="menu__item">
-                                <a href="#picFour" class="menu__link">
+                                <a href="#picFour"  data-scroll-to data-menu-target="#picFour" class="menu__link">
                                     picture 4
                                 </a>
                                 <!-- <span class="menu__active"></span> -->
                             </li>
                             <li class="menu__item">
-                                <a href="#picFive" class="menu__link">
+                                <a href="#picFive"  data-scroll-to data-menu-target="#picFive" class="menu__link">
                                     picture 5
                                 </a>
                                 <!-- <span class="menu__active"></span> -->
@@ -111,6 +113,7 @@
                         </ul>
                         <span class="menu__active"></span>
                       </div>
+                    
                 </div>
                 <div class="col2" data-scroll>
                     <div class="projectImages" >
@@ -127,18 +130,198 @@
                             <img src="../images/projectone.png" alt="">
                         </div>
                     </div>
+                    <div class="four" data-scroll>
+                        <div class="row1 row">
+                            <div class="titleRow">
+                               <h2>Related product</h2>
+                            </div>
+                            <div class="products">
+                             <div class="productsSlider">
+                                <div class="swiper Swipertwo">
+                                    <div class="swiper-wrapper">
+                                         <div class="swiper-slide">
+                                             <a href="">
+                                             <div class="image">
+                                                 <img src="../images/80 1 (3).png" alt="">
+                                             </div>
+                                             <div class="title">
+                                                 <h3>Elegant Plastic8</h3>
+                                             </div>
+                                         </a>
+                                        </div>
+                                         <div class="swiper-slide">
+                                             <a href="">
+                                             <div class="image">
+                                                 <img src="../images/80 1 (4).png" alt="">
+                                             </div>
+                                             <div class="title">
+                                                 <h3>Elegant Plastic8</h3>
+                                             </div>
+                                         </a>
+                                         </div>
+                                        <div class="swiper-slide">
+                                         <a href="">
+                                         <div class="image">
+                                             <img src="../images/80 1 (4).png" alt="">
+                                         </div>
+                                         <div class="title">
+                                             <h3>Elegant Plastic8</h3>
+                                         </div>
+                                     </a>
+                                       </div>
+                                      <div class="swiper-slide">
+                                         <a href="">
+                                         <div class="image">
+                                             <img src="../images/80 1 (4).png" alt="">
+                                         </div>
+                                         <div class="title">
+                                             <h3>Elegant Plastic8</h3>
+                                         </div>
+                                     </a>
+                                      </div>
+                                       <div class="swiper-slide">
+                                         <a href="">
+                                         <div class="image">
+                                             <img src="../images/80 1 (4).png" alt="">
+                                         </div>
+                                         <div class="title">
+                                             <h3>Elegant Plastic8</h3>
+                                         </div>
+                                     </a>
+                                      </div>
+                                      <div class="swiper-slide">
+                                         <a href="">
+                                         <div class="image">
+                                             <img src="../images/80 1 (4).png" alt="">
+                                         </div>
+                                         <div class="title">
+                                             <h3>Elegant Plastic8</h3>
+                                         </div>
+                                     </a>
+                                      </div>
+                                      <div class="swiper-slide">
+                                         <a href="">
+                                         <div class="image">
+                                             <img src="../images/80 1 (4).png" alt="">
+                                         </div>
+                                         <div class="title">
+                                             <h3>Elegant Plastic8</h3>
+                                         </div>
+                                     </a>
+                                      </div>
+                                      <div class="swiper-slide">
+                                         <a href="">
+                                         <div class="image">
+                                             <img src="../images/80 1 (6).png" alt="">
+                                         </div>
+                                         <div class="title">
+                                             <h3>Elegant Plastic8</h3>
+                                         </div>
+                                     </a>
+                                      </div>
+                                      <div class="swiper-slide">
+                                         <a href="">
+                                         <div class="image">
+                                             <img src="../images/80 1 (3).png" alt="">
+                                         </div>
+                                         <div class="title">
+                                             <h3>Elegant Plastic8</h3>
+                                         </div>
+                                     </a>
+                                      </div>
+                                      <div class="swiper-slide">
+                                         <a href="">
+                                         <div class="image">
+                                             <img src="../images/80 1 (5).png" alt="">
+                                         </div>
+                                         <div class="title">
+                                             <h3>Elegant Plastic8</h3>
+                                         </div>
+                                     </a>
+                                      </div>
+                                   
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-scrollbar"></div>
+                                <div class="swiper-pagination"></div>
+                          </div> 
+                                 <!-- Swiper -->
+                                  <!-- <div class="swiper Swiperone">
+                                       <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="../pages/Product.html">
+                                                <div class="image">
+                                                    <img src="../images/80 1 (3).png" />
+                                                </div>
+                                                <div class="title">
+                                                    <h3>Elegant Plastic8</h3>
+                                                </div>
+                                            </a>
+                                           </div>
+                                            <div class="swiper-slide" >
+                                                <a href="../pages/Product.html">
+                                                <div class="image">
+                                                    <img src="../images/80 1 (4).png" />
+                                                </div>
+                                                <div class="title">
+                                                    <h3>Elegant Plastic8</h3>
+                                                </div>
+                                               </a>
+                                            </div>
+                                           <div class="swiper-slide">
+                                            <a href="../pages/Product.html">
+                                            <div class="image">
+                                                <img src="../images/80 1 (3).png" />
+                                            </div>
+                                            <div class="title">
+                                                <h3>Elegant Plastic8</h3>
+                                            </div>
+                                            </a>
+                                          </div>
+                                         <div class="swiper-slide">
+                                            <a href="../pages/Product.html">
+                                            <div class="image">
+                                                <img src="../images/80 1 (3).png" />
+                                            </div>
+                                            <div class="title">
+                                                <h3>Elegant Plastic8</h3>
+                                            </div>
+                                            </a>
+                                         </div>
+                                          <div class="swiper-slide">
+                                            <a href="../pages/Product.html">
+                                            <div class="image">
+                                                <img src="../images/80 1 (3).png" />
+                                            </div>
+                                            <div class="title">
+                                                <h3>Elegant Plastic8</h3>
+                                            </div>
+                                            </a>
+                                         </div>
+                                        
+                                   </div>
+                                   <div class="swiper-button-next"></div>
+                                   <div class="swiper-button-prev"></div>
+                                   <div class="swiper-scrollbar"></div>
+                                   <div class="swiper-pagination"></div>
+                             </div> -->
+                             </div>
+                            </div>
+                       </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="sec4"  data-scroll-section>
-            <div class="four" data-scroll>
+            <!-- <div class="four" data-scroll>
                 <div class="row1 row">
                     <div class="titleRow">
                        <h2>Related product</h2>
                     </div>
                     <div class="products">
                      <div class="productsSlider">
-                         <!-- Swiper -->
+                        
                           <div class="swiper Swiperone">
                                <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -151,7 +334,7 @@
                                         </div>
                                     </a>
                                    </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" data-scroll>
                                         <a href="../pages/Product.html">
                                         <div class="image">
                                             <img src="../images/80 1 (4).png" />
@@ -201,7 +384,7 @@
                      </div>
                     </div>
                </div>
-            </div>
+            </div> -->
         </section>
         <section id="sec5" data-scroll-section>
             <footer data-scroll>
@@ -275,6 +458,7 @@
 </main>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
     <script src="../js/scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.1.0/swiper-bundle.min.js"></script>
     <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="../js/project.js"></script>
 </body>

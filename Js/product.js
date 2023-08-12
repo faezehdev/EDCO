@@ -110,38 +110,38 @@ for(let i=0;i<btns.length ; i++){
   }
   const nav =document.querySelector('#nav')
   window.addEventListener('scroll',()=>{
-      if (window.scrollY > nav.offsetTop) {  
+      // if (window.scrollY > nav.offsetTop) {  
           
-          nav.classList.add('active');
+      //     nav.classList.add('active');
       
-          if(window.scrollY>=700){
+      //     if(window.scrollY>=700){
            
-            current[0].className = current[0].className.replace('_active', '')
-            btns[0].classList.add('_active')
-            menuActive[0].style.top=`calc(38px)`
-          }
-          if(window.scrollY>=1000){
+      //       current[0].className = current[0].className.replace('_active', '')
+      //       btns[0].classList.add('_active')
+      //       menuActive[0].style.top=`calc(38px)`
+      //     }
+      //     if(window.scrollY>=1000){
            
-            current[0].className = current[0].className.replace('_active', '')
-            btns[1].classList.add('_active')
-            menuActive[0].style.top=`calc(38px + ${1*28}px)`
-          }
-          if(window.scrollY>=1600){
+      //       current[0].className = current[0].className.replace('_active', '')
+      //       btns[1].classList.add('_active')
+      //       menuActive[0].style.top=`calc(38px + ${1*28}px)`
+      //     }
+      //     if(window.scrollY>=1600){
            
-            current[0].className = current[0].className.replace('_active', '')
-            btns[2].classList.add('_active')
-            menuActive[0].style.top=`calc(38px + ${2*28}px)`
-          }
-          if(window.scrollY>=2060){
+      //       current[0].className = current[0].className.replace('_active', '')
+      //       btns[2].classList.add('_active')
+      //       menuActive[0].style.top=`calc(38px + ${2*28}px)`
+      //     }
+      //     if(window.scrollY>=2060){
            
-            current[0].className = current[0].className.replace('_active', '')
-            btns[3].classList.add('_active')
-            menuActive[0].style.top=`calc(38px + ${3*28}px)`
-          }
-         } 
-        else {
-          nav.classList.remove('active');    
-        }
+      //       current[0].className = current[0].className.replace('_active', '')
+      //       btns[3].classList.add('_active')
+      //       menuActive[0].style.top=`calc(38px + ${3*28}px)`
+      //     }
+      //    } 
+      //   else {
+      //     nav.classList.remove('active');    
+      //   }
   })
 
 

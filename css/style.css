@@ -2322,15 +2322,14 @@ margin-top: 7rem;
     -o-transform: translateY(-1%);
 }
  .product #sec2 .two .col1 .sideMenu.sticky {
-    width: 15%;
+    /* width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    /* overflow: hidden;
-    list-style-type: none; */
-    position: fixed !important;
+   
+    position: sticky !important;
     top: 15% !important;
     right: 0% !important;
     background-color: #fff !important;
@@ -2343,14 +2342,14 @@ margin-top: 7rem;
     -webkit-transform: translateY(0%);
     -moz-transform: translateY(0%);
     -ms-transform: translateY(0%);
-    -o-transform: translateY(0%);
+    -o-transform: translateY(0%); */
     
 }
 .product #sec2 .two .col1 .sideMenu.sticky .menu__active{
     width: 27px;
 }
  .product #sec2 .two .col1 .sideMenu ul.menu__list{
- padding: 30px 0;
+
  display: grid;
  gap: 10px;
  position: relative;
@@ -3233,7 +3232,7 @@ position: relative;
 .project #sec3 .three{
     width: 100%;
    display: grid;
-   grid-template-columns: 1fr 5fr;
+   grid-template-columns: 1fr 85%;
 }
 .project #sec3 .three .col1{
     width: 100%;
@@ -3242,17 +3241,18 @@ position: relative;
  .project #sec3 .three .col1 .sideMenu{
     width: 100%;
     height: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    position: relative;
+    align-items: flex-start; */
+    position: sticky;
     overflow: hidden;
     list-style-type: none;
-    
+    top: 0;
+    left: 0;
 }
 
  .project #sec3 .three .col1 .sideMenu.sticky {
-    width: 15%;
+    /* width: 15%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -3273,7 +3273,7 @@ position: relative;
     -webkit-transform: translateY(0%);
     -moz-transform: translateY(0%);
     -ms-transform: translateY(0%);
-    -o-transform: translateY(0%);
+    -o-transform: translateY(0%); */
 }
 .project #sec3 .three .col1 .sideMenu.sticky .menu__active{
     width: 100px;
@@ -3328,11 +3328,11 @@ list-style-type: none;
 }
 
 .project #sec3 .three .col2{
-    width: 85%;
-    padding-right: 1.1rem;
+    width: 100%;
+
 }
 .project #sec3 .three .col2 .projectImages{
-    width: 100%;
+    width: 91%;
  flex-wrap: wrap;
     display: flex;
     flex-direction: column;
@@ -3342,12 +3342,105 @@ list-style-type: none;
 .project #sec3 .three .col2 .projectImages .img{
     width: 100%;
     height: 100%;
+    margin-top: 2rem;
    
 }
 .project #sec3 .three .col2 .projectImages .img img{
     min-width: 100%;
 }
-
+.project #sec3 .three .col2 .four{
+ 
+    width: 91%;
+    margin-top: 2rem;
+}
+.project #sec3 .three .col2 .four .row1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project #sec3 .three .col2 .four .row1 .products{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer);
+    margin-top: 1rem;
+}
+.project #sec3 .three .col2 .four .row1 .products{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer);
+    margin-top: 2rem;
+}
+.project #sec3 .three .col2 .four .row1 .products .productsSlider,
+.project #sec3 .three .col2 .four .row1 .products .productsSlider .Swipertwo{
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+}
+.project #sec3 .three .col2 .four .row1 .products .productsSlider .Swipertwo .swiper-slide{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:0 2%;
+    flex-shrink: 0 !important;
+}
+.project #sec3 .three .col2 .four .row1 .products .productsSlider .Swipertwo .swiper-slide .image{
+    width:150px !important;
+    height: 150px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project #sec3 .three .col2 .four .row1 .products .productsSlider .Swipertwo .swiper-slide .image img{
+    width: 75%;
+    height: 90%;
+    object-fit: contain;
+}
+.project #sec3 .three .col2 .four .row1 .products .productsSlider .Swipertwo .swiper-slide .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project #sec3 .three .col2 .four .row1 .products .productsSlider .Swipertwo .swiper-slide .title h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+  }
+  .project #sec3 .three .col2 .four .row1 .products .productsSlider .swiper .swiper-button-next::after, 
+  .project #sec3 .three .col2 .four .row1 .products .productsSlider .swiper .swiper-button-prev::after, .productSlider .swiper .swiper-button-prev::after, .productSlider .swiper .swiper-button-next::after {
+    color: var(--white) !important;
+}
+.project #sec3 .three .col2 .four .row1 .titleRow{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+.project #sec3 .three .col2 .four .row1 .titleRow::before{
+    content: '';
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: var(--homeafter);
+    right: 0;
+}
+.project #sec3 .three .col2 .four .row1 .titleRow  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--homeText);
+    padding-right: 1rem;
+}
 /*------------------------------ project page sec 4----------------------------------- */
 .project #sec4{
     width: 100%;
@@ -3357,13 +3450,13 @@ list-style-type: none;
     align-items: center;
 }
 .project #sec4 .four{
-    width: 75%;
+    /* width: 75%;
     height: 100%;
     transform: translateX(-78px);
     -webkit-transform: translateX(-78px);
     -moz-transform: translateX(-78px);
     -ms-transform: translateX(-78px);
-    -o-transform: translateX(-78px);
+    -o-transform: translateX(-78px); */
 }
 .project #sec4 .four .row1{
     display: flex;
