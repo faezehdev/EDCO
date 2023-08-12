@@ -7,48 +7,52 @@
   rel="stylesheet"
   href="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.css"
 />
+<link rel="stylesheet" href="../css/locomotive-scroll.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>ادکو</title>
 </head>
 <body >
-    <div class="container">
+    <div class="mouseCircle"></div>
+    <header id="nav"  >
+        <div class="logo">
+            <img src="../images/Logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../pages/List-Product.html" >
+                        products
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/List-Project.html">
+                       projects
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/List-Article.html">
+                        articles
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/AboutUs.html" >
+                        about us
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/ContactUs.html" >
+                      contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="container" id="scroll-direction" data-scroll-container >
      
-        <section id="sec1">
+        <section id="sec1" data-scroll-section>
           <div class="one">
-            <header id="nav">
-                <div class="logo">
-                    <img src="../images/Logo.png" alt="">
-                </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="../pages/List-Product.html" data-text="products">
-                                products
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../pages/List-Project.html" data-text="projects">
-                               projects
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../pages/List-Article.html" data-text="articles">
-                                articles
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../pages/AboutUs.html" data-text="about us">
-                                about us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../pages/ContactUs.html" data-text="contact us">
-                              contact us
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+         
                 <div class="row1">
                     <div class="img">
                         <img src="../images/_DSC0053 1.png" alt="">
@@ -58,12 +62,16 @@
                   
                         <div class="title">
                             <h3>Edco Makes your life brigher</h3>
+                            <span class="rigo">
+                               
+                            </span>
+                            
                       
                     </div>
                 </div>
             </div>
         </section>
-        <section  id="sec2">
+        <section  id="sec2" data-scroll-section >
             <div class="two">
                 <img src="../images/post2.png" alt="">
                 <div class="overlay"></div>
@@ -88,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <section id="sec3">
+        <section id="sec3" data-scroll-section>
             <div class="three" >
                 <div class="row1">
                     <div class="productTitle">
@@ -160,7 +168,7 @@
                 </div>
             </div>
         </section>
-        <section id="sec4">
+        <section id="sec4" data-scroll-section>
             <div class="four">
                 <div class="row1">
                     <div class="projectTitle">
@@ -168,16 +176,22 @@
                     </div>
                 </div>
                 <div class="projects">
-                    <div class="project right">
+                   
+                    <div class="project right hasCircle">
+                        <a href="" >
                         <div class="projectImage ">
                             <img src="../images/project1 (2).png" alt="">
                         </div>
                         <div class="projectName">
                             <h3 class="right">mr eftekhari project</h3>
                         </div>
-                        
+                     
+                    </a>
                     </div>
-                    <div class="project left ">
+              
+              
+                    <div class="project left hasCircle">
+                        <a href="" >
                         <div class="projectImage ">
                           
                             <img src="../images/project5.PNG" alt="">
@@ -185,9 +199,10 @@
                         <div class="projectName">
                             <h3 class="left">mr eftekhari project</h3>
                         </div>
-                        
+                        <div class="cursor"></div>
+                    </a>
                     </div>
-                    <div class="cursor"></div>
+                  
                     <div class="projectALLbtn">
                         <button type="button" class="arrow">
                             <a href="../pages/List-Project.html">
@@ -199,7 +214,7 @@
                 </div> 
             </div>
         </section>
-        <section id="sec5">
+        <section id="sec5" data-scroll-section>
             <div class="five">
                 <div class="overlay"></div>
                 <video id="video-elem" poster="../images/asadi.png">
@@ -212,7 +227,7 @@
                 </div>
             </div>
         </section>
-        <section id="sec6">
+        <section id="sec6" data-scroll-section>
             <div class="six">
                 <div class="posts">
                     <div class="post">
@@ -269,7 +284,7 @@
                 </div>
             </div>
         </section>
-        <section id="sec7">
+        <section id="sec7" data-scroll-section>
             <footer>
                 <div class="row1">
                     <div class="col1">
@@ -339,9 +354,11 @@
         </section>
 
     </div>
+</main>
+    <script src="../js/scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-    <script src="../js/ScrollTrigger.min.js"></script>
-    <script src="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <!-- <script src="../js/ScrollTrigger.min.js"></script>
+    <script src="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script> -->
   
     <script src="../js/index.js"></script>
 </body>

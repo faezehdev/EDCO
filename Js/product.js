@@ -1,13 +1,47 @@
-gsap.registerPlugin( ScrollTrigger);
-const locoscroll = new LocomotiveScroll({
-  el:document.querySelector('.product'),
-  smooth:true
-})
-//gsap-----------------------------------------------------------------
-gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
-gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
-gsap.from('.container #sec1 .one header nav ul li a::after',{duration:2,width:0})
+// Enable Scroll
+if (document.querySelector(`[data-scroll-container]`) != undefined) {
+  let locoScroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+  })
+  locoScroll.on('scroll', (args) => {
+      if (args.delta != undefined) {
+          let scrTop = args.delta.y
+          if (scrTop > 80) {
+          
+              document.querySelector(`header`).classList.add('active')
+          } else {
+              document.querySelector(`header`).classList.remove('active')
+          }
+          if (scrTop >690.4000244140625) {    
+            sidemenu.classList.add('sticky');
+          } else {
+            sidemenu.classList.remove('sticky');    
+          }
+      }
+  })
+}
 
+
+// Mouse
+let hasCircle = document.querySelectorAll(`.hasCircle`)
+let mouseCircle = document.querySelector(`.mouseCircle`)
+if (hasCircle.length > 0) {
+    hasCircle.forEach((el) => {
+        el.addEventListener('mouseenter', () => {
+            mouseCircle.classList.add('active')
+        })
+        el.addEventListener('mousemove', (event) => {
+            let x = event.screenX
+            let y = event.screenY
+            mouseCircle.style.left = `${x}px`
+            mouseCircle.style.top = `${y}px`
+        })
+        el.addEventListener('mouseleave', () => {
+            mouseCircle.classList.remove('active')
+        })
+    })
+}
 let swiper = new Swiper(".Swiperone", {
    pagination: {
       
@@ -57,30 +91,18 @@ navigation: {
    prevEl: ".swiper-button-prev",
  },
 });
-scrollPos = (el)=>{
-  el.scrollIntoView({
-    block:'center',
-    behavior:'smooth',
-   
-  })
-}
+
 const btnContainer = document.getElementsByClassName('menu__list');
 let btns = btnContainer[0].getElementsByClassName('menu__link');
 let menuActive = document.getElementsByClassName('menu__active')
 let current = document.getElementsByClassName('_active')
 for(let i=0;i<btns.length ; i++){
-  // HTMLElement.style.scrollPadding='10vh'
+
   btns[i].addEventListener('click',()=>{
     
      current[0].className = current[0].className.replace('_active', '')
      btns[i].className += ' _active'
      menuActive[0].style.top=`calc(38px + ${i*28}px)`
-//      let element = document.getElementsByClassName('scroll')[i];
-//   element= element.getBoundingClientRect()
-//    console.log(element.top+ document.getElementsByClassName('fixed-element')[0].offsetHeight);
-//    let sc =element.top+ document.getElementsByClassName('fixed-element')[0].offsetHeight
-//    .top- document.getElementsByClassName('fixed-element')[0].offsetHeight?
-// window.scrollTo(0, sc+`100px`)
 
   })
  
@@ -88,9 +110,10 @@ for(let i=0;i<btns.length ; i++){
   }
   const nav =document.querySelector('#nav')
   window.addEventListener('scroll',()=>{
-      if (window.scrollY > nav.offsetTop) {    
+      if (window.scrollY > nav.offsetTop) {  
+          
           nav.classList.add('active');
-          // window.scroll(0,10)
+      
           if(window.scrollY>=700){
            
             current[0].className = current[0].className.replace('_active', '')
@@ -115,7 +138,8 @@ for(let i=0;i<btns.length ; i++){
             btns[3].classList.add('_active')
             menuActive[0].style.top=`calc(38px + ${3*28}px)`
           }
-        } else {
+         } 
+        else {
           nav.classList.remove('active');    
         }
   })
@@ -132,36 +156,3 @@ const sec2 =document.querySelector('#sec2')
       }
 })
 
-const internalLinks=document.querySelectorAll('.scroll')
-// internalLinks.forEach((link)=>{
-//   link.scrollIntoView({
-//     behavior:'smooth',
-//     block:'center'
-//   })
-//   console.log(link);
-// })
-
-
-const cursorcontainer = document.querySelectorAll(".project .box");
-const cursorBorder = document.querySelector(".cursor");
-const cursorPos = { x: 0, y: 0 };
-const cursorBorderPos = { x: 0, y: 0 };
-for(let i=0;i<cursorcontainer.length;i++){
-  cursorcontainer[i].addEventListener("mousemove", (e) => {
-    cursorBorder.style.display="flex"
-    cursorPos.x = e.clientX;
-    cursorPos.y = e.clientY;
-  });
-  cursorcontainer[i].addEventListener("mouseleave", (e) => {
-    cursorBorder.style.display="none"
-    
-  });
-}
-requestAnimationFrame(function loop() {
-  const easting = 8;
-  cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / easting;
-  cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / easting;
-
-  cursorBorder.style.transform = `translate(${cursorBorderPos.x}px, ${cursorBorderPos.y}px)`;
-  requestAnimationFrame(loop);
-});

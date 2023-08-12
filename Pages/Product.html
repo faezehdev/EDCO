@@ -9,47 +9,48 @@
     href="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.css"
   />
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
 </head>
 <body>
-    <div class="product">
-        <section id="sec1">
-            <div class="one">
-                <header id="nav">
-                    <div class="logo">
-                        <img src="../images/Logo.png" alt="">
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="../pages/List-Product.html">
-                                    products
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/List-Project.html">
-                                   projects
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/List-Article.html">
-                                    articles
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/AboutUs.html">
-                                    about us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/ContactUs.html">
-                                  contact us
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
+    <div class="mouseCircle"></div>
+    <header id="nav">
+        <div class="logo">
+            <img src="../images/Logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../pages/List-Product.html">
+                        products
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/List-Project.html">
+                       projects
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/List-Article.html">
+                        articles
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/AboutUs.html">
+                        about us
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/ContactUs.html">
+                      contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="product" data-scroll-container>
+        <section id="sec1"  data-scroll-section>
+            <div class="one" data-scroll>
                 <div class="row">
                     <img src="../images/post2.png" alt="">
                     <div class="row1">
@@ -58,8 +59,8 @@
                 </div>
             </div>
         </section>
-        <section id="sec2">
-            <div class="two">
+        <section id="sec2" data-scroll-section>
+            <div class="two" data-scroll>
              <div class="col1">
               <div class="sideMenu">
                 <ul class="menu__list">
@@ -298,16 +299,16 @@
                     </div>
                     <div class="projects">
                           <div class="project">
-                            <div class="box">
+                            <div class="box hasCircle">
                                 <a href="../pages/Project.html"> 
                                 <div class="firImg">
                                     <img src="../images/project1 (2).png" alt="">
                                     <div class="overlay"></div>
                                 </div>
-                                <div class="cursor"></div>
+                               
                                 </a>
                             </div>
-                            <div class="box">
+                            <div class="box hasCircle">
                                 <a href="../pages/Project.html"> 
                                 <div class="projectImage ">
                           
@@ -319,7 +320,22 @@
                                         <h3 class="left">mr eftekhari project</h3>
                                     </div>
                                 </div>
-                                <div class="cursor"></div>
+                               
+                            </a>
+                            </div>
+                            <div class="box hasCircle">
+                                <a href="../pages/Project.html"> 
+                                <div class="projectImage ">
+                          
+                                    <img src="../images/project5.PNG" alt="">
+                                </div>
+                               
+                                <div class="overlay">
+                                    <div class="projectName">
+                                        <h3 class="left">mr eftekhari project</h3>
+                                    </div>
+                                </div>
+                               
                             </a>
                             </div>
                           </div>
@@ -332,8 +348,8 @@
             </div>
         </section>
 
-        <section id="sec3">
-            <footer>
+        <section id="sec3"  data-scroll-section>
+            <footer data-scroll>
                 <div class="row1">
                     <div class="col1">
                         <div class="logo">
@@ -402,11 +418,10 @@
         </section>
 
     </div>
+</main>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-    <script src="../js/ScrollTrigger.min.js"></script>
-    <script src="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script src="../js/scroll.js"></script>
     <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="../js/product.js"></script>
   
 </body>

@@ -8,47 +8,51 @@
     rel="stylesheet"
     href="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.css"
   />
+  <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/locomotive-scroll.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+   
 </head>
 <body>
-    <div class="project">
-        <section id="sec1">
-            <div class="one">
-                <header id="nav">
-                    <div class="logo">
-                        <img src="../images/Logo.png" alt="">
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="../pages/List-Product.html">
-                                    products
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/List-Project.html">
-                                   projects
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/List-Article.html">
-                                    articles
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/AboutUs.html">
-                                    about us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/ContactUs.html">
-                                  contact us
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
+    <header id="nav">
+        <div class="logo">
+            <img src="../images/Logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../pages/List-Product.html">
+                        products
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/List-Project.html">
+                       projects
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/List-Article.html">
+                        articles
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/AboutUs.html">
+                        about us
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/ContactUs.html">
+                      contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="project" data-scroll-container>
+        <section id="sec1"  data-scroll-section>
+            <div class="one" data-scroll>
+              
                 <div class="row">
                     <img src="../images/post2.png" alt="">
                     <div class="row1">
@@ -57,8 +61,8 @@
                 </div>
             </div>
         </section>
-        <section id="sec2">
-            <div class="two">
+        <section id="sec2"  data-scroll-section>
+            <div class="two" data-scroll>
                 <div class="projectTitle">
                     <h2>mr eftekhari project</h2>
                 </div>
@@ -68,9 +72,9 @@
                     Assumenda, neque quos? Tenetur, magnam. Reprehenderit harum, eius pariatur excepturi facilis magni necessitatibus nihil, repudiandae impedit atque autem quod sapiente veritatis cum quae nulla? Nesciunt sint ducimus consequuntur dolorem temporibus?  </div>
             </div>
         </section>
-        <section id="sec3">
-            <div class="three">
-                <div class="col1">
+        <section id="sec3"  data-scroll-section>
+            <div class="three" data-scroll>
+                <div class="col1" data-scroll>
                     <div class="sideMenu">
                         <ul class="menu__list">
                             <li  class="menu__item  ">
@@ -108,26 +112,26 @@
                         <span class="menu__active"></span>
                       </div>
                 </div>
-                <div class="col2">
-                    <div class="projectImages">
-                        <div class="img" id="picOne">
+                <div class="col2" data-scroll>
+                    <div class="projectImages" >
+                        <div class="img" id="picOne"  >
                           <img src="../images/projectone.png" alt="">
                         </div>
-                        <div class="img" id="picTwo">
+                        <div class="img"  id="picTwo">
                             <img src="../images/projecttwo.png" alt="">
                         </div>
-                        <div class="img" id="picThree">
+                        <div class="img" id="picThree" >
                             <img src="../images/projectthree.png" alt="">
                         </div>
-                        <div class="img" id="picFour">
+                        <div class="img" id="picFour" >
                             <img src="../images/projectone.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="sec4">
-            <div class="four">
+        <section id="sec4"  data-scroll-section>
+            <div class="four" data-scroll>
                 <div class="row1 row">
                     <div class="titleRow">
                        <h2>Related product</h2>
@@ -199,8 +203,8 @@
                </div>
             </div>
         </section>
-        <section id="sec5">
-            <footer>
+        <section id="sec5" data-scroll-section>
+            <footer data-scroll>
                 <div class="row1">
                     <div class="col1">
                         <div class="logo">
@@ -268,10 +272,10 @@
             </footer>
         </section>
     </div>
+</main>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-    <script src="../js/ScrollTrigger.min.js"></script>
-    <script src="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="../js/project.js"></script>
 </body>
 </html>

@@ -9,48 +9,51 @@
     href="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.css"
   />
     <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
-     <div class="catProductInner">
-        <section id="sec1">
+    <header id="nav">
+        <div class="logo">
+            <img src="../images/Logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../pages/List-Product.html">
+                        products
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/List-Project.html">
+                       projects
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/List-Article.html">
+                        articles
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/AboutUs.html">
+                        about us
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/ContactUs.html">
+                      contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+     <div class="catProductInner" data-scroll-container>
+        <section id="sec1" data-scroll-section>
             <div class="one">
-                <header id="nav">
-                    <div class="logo">
-                        <img src="../images/Logo.png" alt="">
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="../pages/List-Product.html">
-                                    products
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/List-Project.html">
-                                   projects
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/List-Article.html">
-                                    articles
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/AboutUs.html">
-                                    about us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/ContactUs.html">
-                                  contact us
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
+             
     
-                <div class="sliderContainer">
+                <div class="sliderContainer" data-scroll>
                      <!-- Swiper -->
                       <div class="swiper mySwiper">
                            <div class="swiper-wrapper">
@@ -81,8 +84,8 @@
                 </div>
                </div>
         </section>
-        <section id="sec2">
-            <div class="two">
+        <section id="sec2" data-scroll-section>
+            <div class="two" data-scroll>
                 <div class="row1">
                     <div class="productTitle">
                         <h2>Elegant</h2>
@@ -225,7 +228,7 @@
         </div>
             </div>
         </section>
-        <section id="sec3">
+        <section id="sec3" data-scroll-section>
             <footer>
                 <div class="row1">
                     <div class="col1">
@@ -294,9 +297,11 @@
             </footer>
         </section>
      </div>
+    </main>
+    
+     <script src="../js/scroll.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-     <script src="../js/ScrollTrigger.min.js"></script>
-     <script src="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+     <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script  src="../js/catproductInner.js"></script>
    

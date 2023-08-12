@@ -11,50 +11,51 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="contactUs">
-        <section id="sec1">
-        <div class="one">
-            <header id="nav">
-                <div class="logo">
-                    <img src="../images/Logo.png" alt="">
-                </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="../pages/List-Product.html">
-                                products
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../pages/List-Project.html">
-                               projects
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../pages/List-Article.html">
-                                articles
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../pages/AboutUs.html">
-                                about us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../pages/ContactUs.html">
-                              contact us
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+    <header id="nav">
+        <div class="logo">
+            <img src="../images/Logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../pages/List-Product.html">
+                        products
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/List-Project.html">
+                       projects
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/List-Article.html">
+                        articles
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/AboutUs.html">
+                        about us
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/ContactUs.html">
+                      contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="contactUs" data-scroll-container>
+        <section id="sec1" data-scroll-section>
+        <div class="one" data-scroll>
             <div class="row">
                 <img src="../images/contactus.png" alt="">
             </div>
         </div>
     </section>
-    <section id="sec2">
-        <div class="two">
+    <section id="sec2" data-scroll-section>
+        <div class="two" data-scroll>
             <div class="row">
                 <div class="projectTitle">
                     <h2>contact us</h2>
@@ -139,8 +140,8 @@
             </div>
         </div>
     </section>
-    <section id="sec3">
-        <div class="three">
+    <section id="sec3" data-scroll-section>
+        <div class="three" data-scroll>
             <div class="row">
                 <div class="projectTitle">
                     <h2>List of offices and branches</h2>
@@ -251,8 +252,8 @@
         </div>
     </section>
 
-    <section id="sec4">
-        <footer>
+    <section id="sec4" data-scroll-section >
+        <footer data-scroll>
             <div class="row1">
                 <div class="col1">
                     <div class="logo">
@@ -320,9 +321,10 @@
         </footer>
     </section>
     </div>
+</main>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-    <script src="../js/ScrollTrigger.min.js"></script>
-    <script src="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
     <script src="../js/contactUs.js"></script>
 </body>
 </html>

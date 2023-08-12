@@ -12,47 +12,50 @@
  
 </head>
 <body>
-    <div class="list-project">
-        <section id="sec1">
-            <div class="one">
-                <header id="nav">
-                    <div class="logo">
-                        <img src="../images/Logo.png" alt="">
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="../pages/List-Product.html">
-                                    products
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/List-Project.html">
-                                   projects
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/List-Article.html">
-                                    articles
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/AboutUs.html">
-                                    about us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/ContactUs.html">
-                                  contact us
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
+    <div class="mouseCircle"></div>
+    <header id="nav">
+        <div class="logo">
+            <img src="../images/Logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../pages/List-Product.html">
+                        products
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/List-Project.html">
+                       projects
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/List-Article.html">
+                        articles
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/AboutUs.html">
+                        about us
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/ContactUs.html">
+                      contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="list-project"  data-scroll-container>
+        <section id="sec1" data-scroll-section>
+            <div class="one"  data-scroll>
+              
             </div>
         </section>
-        <section id="sec2">
-            <div class="two">
+        <section id="sec2" data-scroll-section>
+            <div class="two"  data-scroll>
                 <div class="row">
                         <div class="productTitle">
                            <h2>projects list</h2>
@@ -99,7 +102,7 @@
                     </div>
                     <div class="col2">
                        <div class="projectBoxes">
-                        <div class="box">
+                        <div class="box hasCircle">
                             <a href="../pages/Project.html">
                             <div class="projectImage ">
                       
@@ -112,7 +115,7 @@
                            
                         </a>
                         </div>
-                        <div class="box">
+                        <div class="box hasCircle">
                             <a href="../pages/Project.html">
                             <div class="projectImage ">
                       
@@ -125,7 +128,7 @@
                            
                         </a>
                         </div>
-                        <div class="box">
+                        <div class="box hasCircle">
                             <a href="../pages/Project.html">
                             <div class="projectImage ">
                       
@@ -138,7 +141,7 @@
                            
                         </a>
                         </div>
-                        <div class="box">
+                        <div class="box hasCircle">
                             <a href="../pages/Project.html">
                             <div class="projectImage ">
                       
@@ -148,10 +151,9 @@
                             <div class="projectName">
                                 <h3 class="left">mr eftekhari project</h3>
                             </div>
-                           
                         </a>
                         </div>
-                        <div class="box">
+                        <div class="box hasCircle">
                             <a href="../pages/Project.html">
                             <div class="projectImage ">
                       
@@ -164,7 +166,7 @@
                           
                         </a>
                         </div>
-                        <div class="box">
+                        <div class="box hasCircle">
                             <a href="../pages/Project.html">
                             <div class="projectImage ">
                       
@@ -177,15 +179,14 @@
                             
                         </a>
                         </div>
-                        <div class="cursor"></div>
                        </div>
                       </div>
                     </div>
                 </div>
           
         </section>
-        <section id="sec3">
-            <footer>
+        <section id="sec3" data-scroll-section>
+            <footer  data-scroll>
                 <div class="row1">
                     <div class="col1">
                         <div class="logo">
@@ -253,10 +254,9 @@
             </footer>
         </section>
        </div>
-       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-       <script src="../js/ScrollTrigger.min.js"></script>
-       <script src="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    </main>
+    <script src="../js/scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
     <script src="../js/listProject.js"></script>
 </body>
 </html>

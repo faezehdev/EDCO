@@ -1,9 +1,37 @@
-
-gsap.registerPlugin( ScrollTrigger);
-const locoscroll = new LocomotiveScroll({
-  el:document.querySelector('.container'),
-  smooth:true
+// Enable Scroll
+if (document.querySelector(`[data-scroll-container]`) != undefined) {
+  let locoScroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+  })
+  console.log(locoScroll);
+  locoScroll.on('scroll', (args) => {
+      if (args.delta != undefined) {
+          let scrTop = args.delta.y
+          if (scrTop > 80) {
+              document.querySelector(`header`).classList.add('active')
+          } else {
+              document.querySelector(`header`).classList.remove('active')
+          }
+      }
+  })
+}
+document.addEventListener('scroll', () => {
+  let scrTop = document.scrollingElement.scrollTop
+  if (scrTop > 80) {
+      document.querySelector(`header`).classList.add('active')
+  } else {
+      document.querySelector(`header`).classList.remove('active')
+  }
 })
+new ResizeObserver(() => scroll.update()).observe(document.querySelector("[data-scroll-container]"))
+// gsap.registerPlugin( ScrollTrigger);
+// const locoscroll = new LocomotiveScroll({
+//   el:document.querySelector('.container'),
+//   smooth:true
+// })
+// let target = document.getElementById("sec2");
+// locoscroll.scrollTo(target);
 
 // play pause video--------------------------------------------------
 
@@ -28,15 +56,24 @@ video.addEventListener('click' , ()=>{
 })
 // fixed menu-----------------------------------------------------------
 
-const nav =document.querySelector('#nav')
-window.addEventListener('scroll',()=>{
-    if (window.scrollY > nav.offsetTop) {    
-        nav.classList.add('active');
-      } else {
-        nav.classList.remove('active');    
-      }
-})
-
+// const nav =document.querySelector('#nav')
+// window.addEventListener('scroll',()=>{
+//     if (window.scrollY > nav.offsetTop) {    
+//         nav.classList.add('active');
+//       } else {
+//         nav.classList.remove('active');    
+//       }
+// })
+// const nav =document.querySelector('#nav')
+// locoscroll.on('scroll',(e)=>{
+//   console.log(nav.offsetTop);
+//  if(e.scroll.y > nav.offsetTop){
+//   nav.classList.add('active');
+//  }
+//  else {
+//   nav.classList.remove('active');    
+// }
+// })
 
 // hover product--------------------------------------------------------
 let product = document.getElementsByClassName('productBox')
@@ -92,35 +129,36 @@ faders.forEach((fader)=>{
 appearOnScroll.observe(fader)
 })
 //cursor follow-----------------------------------------------------------------
-const cursorcontainer = document.querySelectorAll(".project");
-const cursorBorder = document.querySelector(".cursor");
-const cursorPos = { x: 0, y: 0 };
-const cursorBorderPos = { x: 0, y: 0 };
-for(let i=0;i<cursorcontainer.length;i++){
-  cursorcontainer[i].addEventListener("mousemove", (e) => {
-    cursorBorder.style.display="flex"
-    cursorPos.x = e.clientX;
-    cursorPos.y = e.clientY;
-  });
-  cursorcontainer[i].addEventListener("mouseleave", (e) => {
-    cursorBorder.style.display="none"
+// const cursorcontainer = document.querySelectorAll(".project");
+// const cursorBorder = document.querySelector(".cursor");
+// const cursorPos = { x: 0, y: 0 };
+// const cursorBorderPos = { x: 0, y: 0 };
+// for(let i=0;i<cursorcontainer.length;i++){
+//   cursorcontainer[i].addEventListener("mousemove", (e) => {
+//     cursorBorder.style.display="flex"
+//     cursorPos.x = e.clientX;
+//     cursorPos.y = e.clientY;
+//   });
+//   cursorcontainer[i].addEventListener("mouseleave", (e) => {
+//     cursorBorder.style.display="none"
     
-  });
-}
-requestAnimationFrame(function loop() {
-  const easting = 8;
-  cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / easting;
-  cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / easting;
+//   });
+// }
+// requestAnimationFrame(function loop() {
+//   const easting = 8;
+//   cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / easting;
+//   cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / easting;
 
-  cursorBorder.style.transform = `translate(${cursorBorderPos.x}px, ${cursorBorderPos.y}px)`;
-  requestAnimationFrame(loop);
-});
+//   cursorBorder.style.transform = `translate(${cursorBorderPos.x}px, ${cursorBorderPos.y}px)`;
+//   requestAnimationFrame(loop);
+// });
 
 
 //follow curoser-------------------------------------------
 // let gcursorcontainer = gsap.utils.toArray('.project')
 // let gcursor =document.querySelector(".cursor");
-// let moveCursor = (e)=>{
+// let moveCursor = (e,gcursor)=>{
+//   console.log(e);
 //   gcursor.style.display='flex'
 // let mouseX=e.clientX
 // let mouseY=e.clientY
@@ -136,6 +174,7 @@ requestAnimationFrame(function loop() {
 // }
 // let initAnim =()=>{
 //   gcursorcontainer.forEach((item)=>{
+//     let gcursor =item.querySelector(".cursor");
 // item.addEventListener('mousemove',moveCursor)
 //   })
 // }
@@ -149,6 +188,25 @@ requestAnimationFrame(function loop() {
 //     gcursor.style.display='none'
 // })
 // }
+// Mouse
+let hasCircle = document.querySelectorAll(`.hasCircle`)
+let mouseCircle = document.querySelector(`.mouseCircle`)
+if (hasCircle.length > 0) {
+    hasCircle.forEach((el) => {
+        el.addEventListener('mouseenter', () => {
+            mouseCircle.classList.add('active')
+        })
+        el.addEventListener('mousemove', (event) => {
+            let x = event.screenX
+            let y = event.screenY
+            mouseCircle.style.left = `${x}px`
+            mouseCircle.style.top = `${y}px`
+        })
+        el.addEventListener('mouseleave', () => {
+            mouseCircle.classList.remove('active')
+        })
+    })
+}
 // arrow button--------------------------------------------------------
 let btn = document.querySelectorAll('.arrow')
 let arrow = document.querySelectorAll('.ar')

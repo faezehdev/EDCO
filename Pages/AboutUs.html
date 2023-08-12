@@ -10,51 +10,53 @@
   />
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <div class="aboutUs">
-        <section id="sec1">
-            <div class="one">
-                <header id="nav">
-                    <div class="logo">
-                        <img src="../images/Logo.png" alt="">
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="../pages/List-Product.html">
-                                    products
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/List-Project.html">
-                                   projects
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/List-Article.html">
-                                    articles
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/AboutUs.html">
-                                    about us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../pages/ContactUs.html">
-                                  contact us
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
-                <div class="row">
+<body  >
+    <header id="nav">
+        <div class="logo">
+            <img src="../images/Logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../pages/List-Product.html">
+                        products
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/List-Project.html">
+                       projects
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/List-Article.html">
+                        articles
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/AboutUs.html">
+                        about us
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/ContactUs.html">
+                      contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="aboutUs"  data-scroll-container id="scroll-container" >
+        <section id="sec1" data-scroll-section>
+            <div class="one"  >
+                
+                <div class="row"  data-scroll>
                     <img src="../images/post2.png" alt="">
                 </div>
             </div>
         </section>
-        <section id="sec2">
-            <div class="two">
+        <section id="sec2" data-scroll-section>
+            <div class="two"  data-scroll>
                 <div class="row">
                     <div class="projectTitle">
                         <h2>about us</h2>
@@ -75,8 +77,8 @@
                 </div>
             </div>
         </section>
-        <section id="sec3">
-            <div class="three">
+        <section id="sec3" data-scroll-section>
+            <div class="three"  data-scroll>
                 <div class="col1">
                     <video id="video-elem" poster="../images/poster.png" >
                         <source src="../images/home page.mp4">
@@ -95,8 +97,8 @@
                 </div>
             </div>
         </section>
-        <section id="sec4">
-            <div class="four">
+        <section id="sec4" data-scroll-section>
+            <div class="four"  data-scroll>
                 <div class="col1">
                     <div class="projectTitle">
                         <h2>perspective</h2>
@@ -113,9 +115,9 @@
                  </div>
             </div>
         </section>
-        <section id="sec5">
-            <div class="five">
-                <div class="row">
+        <section id="sec5" data-scroll-section>
+            <div class="five"  data-scroll>
+                <div class="row" >
                     <div class="Title">
                         <h2>certificate</h2>
                      </div>
@@ -134,8 +136,8 @@
                 </div>
             </div>
         </section>
-        <section id="sec6">
-            <footer>
+        <section id="sec6" data-scroll-section>
+            <footer data-scroll>
                 <div class="row1">
                     <div class="col1">
                         <div class="logo">
@@ -203,9 +205,10 @@
             </footer>
         </section>
     </div>
+</main>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-    <script src="../js/ScrollTrigger.min.js"></script>
-    <script src="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+     <script src="../js/ScrollTrigger.min.js"></script>
+     <script src="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
     <script src="../js/aboutUs.js"></script>
 </body>
 </html>
