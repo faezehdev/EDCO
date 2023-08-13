@@ -1,8 +1,15 @@
+
+const btnContainer = document.getElementsByClassName('menu__list');
+let btns = btnContainer[0].getElementsByClassName('menu__link');
+let menuActive = document.getElementsByClassName('menu__active')
+let current = document.getElementsByClassName('_active')
+
 // Enable Scroll
 if (document.querySelector(`[data-scroll-container]`) != undefined) {
   let locoScroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
-      smooth: true
+      smooth: true,
+   
   })
   locoScroll.on('scroll', (args) => {
       if (args.delta != undefined) {
@@ -21,6 +28,7 @@ if (document.querySelector(`[data-scroll-container]`) != undefined) {
       }
   })
 }
+
 
 
 // Mouse
@@ -92,22 +100,22 @@ navigation: {
  },
 });
 
-const btnContainer = document.getElementsByClassName('menu__list');
-let btns = btnContainer[0].getElementsByClassName('menu__link');
-let menuActive = document.getElementsByClassName('menu__active')
-let current = document.getElementsByClassName('_active')
+// active images menu
 for(let i=0;i<btns.length ; i++){
-
   btns[i].addEventListener('click',()=>{
+   
     
-     current[0].className = current[0].className.replace('_active', '')
+    current[0].className = current[0].className.replace('_active', '')
      btns[i].className += ' _active'
-     menuActive[0].style.top=`calc(38px + ${i*28}px)`
+    
+    menuActive[0].style.top=`calc(${(btns[i].offsetTop)+5}px)`
 
+
+  
   })
  
 
-  }
+}
   const nav =document.querySelector('#nav')
   window.addEventListener('scroll',()=>{
       // if (window.scrollY > nav.offsetTop) {  
@@ -156,3 +164,6 @@ const sec2 =document.querySelector('#sec2')
       }
 })
 
+//gsap-----------------------------------------------------------------
+gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
+gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})

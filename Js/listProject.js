@@ -28,17 +28,34 @@ const btnContainer = document.getElementsByClassName('menu__list');
 let btns = btnContainer[0].getElementsByClassName('menu__link');
 let menuActive = document.getElementsByClassName('menu__active')
 let current = document.getElementsByClassName('_active')
+let projects= document.querySelectorAll('.box')
+
+// active projects menu
 for(let i=0;i<btns.length ; i++){
   btns[i].addEventListener('click',()=>{
    
+    
     current[0].className = current[0].className.replace('_active', '')
-    btns[i].className += ' _active'
-    menuActive[0].style.top=`calc(13px + ${i*27}px)`
- 
+     btns[i].className += ' _active'
+    
+    menuActive[0].style.top=`calc(${(btns[i].offsetTop)+5}px)`
+
+
+  
   })
  
 
-  }
+}
+//add href attr
+window.addEventListener('load',()=>{
+   
+  for(let d = 0 ; d<projects.length;d++){
+    let projectId= `project${d}`
+    projects[d].setAttribute('id',projectId)
+
+   }
+
+  })
   // const nav =document.querySelector('#nav')
   // window.addEventListener('scroll',()=>{
   //     if (window.scrollY > nav.offsetTop) {    
