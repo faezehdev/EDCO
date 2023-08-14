@@ -112,7 +112,7 @@ ul{
 .container #sec1 .one {
     width:100%;
     height: 100%;
-    background-image: url('../images/1.png');
+  
     background-repeat: no-repeat;
     background-position:1% 38%;
     background-size: cover;
@@ -124,7 +124,11 @@ ul{
     position: relative;
     background-blend-mode: overlay;
 }
-
+.container #sec1 .one img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
 header{
     width: 100%;
     /* height: 30%; */
