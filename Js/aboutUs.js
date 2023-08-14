@@ -1,7 +1,6 @@
-//gsap-----------------------------------------------------------------
-gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
-gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
-
+const playBTN =document.getElementById("PlayPuase")
+const video = document.getElementById("video-elem")
+const pauseBtn = document.querySelector('.aboutUs .three .col1')
 // Enable Scroll
 if (document.querySelector(`[data-scroll-container]`) != undefined) {
   let locoScroll = new LocomotiveScroll({
@@ -29,10 +28,6 @@ document.addEventListener('scroll', () => {
   }
 })
 // play pause video
-
-const playBTN =document.getElementById("PlayPuase")
-const video = document.getElementById("video-elem")
-const pauseBtn = document.querySelector('.aboutUs .three .col1')
 playBTN.addEventListener('click',(e)=>{
   e.stopPropagation()
     video.play()
@@ -49,3 +44,6 @@ playBTN.addEventListener('click',(e)=>{
 video.addEventListener('click' , ()=>{
     playBTN.style.display='flex'
 })
+//gsap-----------------------------------------------------------------
+gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
+gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})

@@ -1,3 +1,9 @@
+const sidemenu =document.querySelector('.list-project .sideMenu')   
+const btnContainer = document.getElementsByClassName('menu__list');
+let btns = btnContainer[0].getElementsByClassName('menu__link');
+let menuActive = document.getElementsByClassName('menu__active')
+let current = document.getElementsByClassName('_active')
+let projects= document.querySelectorAll('.box')
 // Enable Scroll
 if (document.querySelector(`[data-scroll-container]`) != undefined) {
   let locoScroll = new LocomotiveScroll({
@@ -8,13 +14,11 @@ if (document.querySelector(`[data-scroll-container]`) != undefined) {
       if (args.delta != undefined) {
           let scrTop = args.delta.y
           if (scrTop > 80) {
-            console.log('l');
               document.querySelector(`header`).classList.add('active')
           } else {
               document.querySelector(`header`).classList.remove('active')
           }
           if (scrTop > 100) {
-            console.log('baa');
             sidemenu.classList.add('sticky');
           } else {
             sidemenu.classList.remove('sticky'); 
@@ -22,63 +26,21 @@ if (document.querySelector(`[data-scroll-container]`) != undefined) {
       }
   })
 }
-
-
-const btnContainer = document.getElementsByClassName('menu__list');
-let btns = btnContainer[0].getElementsByClassName('menu__link');
-let menuActive = document.getElementsByClassName('menu__active')
-let current = document.getElementsByClassName('_active')
-let projects= document.querySelectorAll('.box')
-
 // active projects menu
 for(let i=0;i<btns.length ; i++){
   btns[i].addEventListener('click',()=>{
-   
-    
     current[0].className = current[0].className.replace('_active', '')
      btns[i].className += ' _active'
-    
-    menuActive[0].style.top=`calc(${(btns[i].offsetTop)+5}px)`
-
-
-  
+     menuActive[0].style.top=`calc(${(btns[i].offsetTop)+5}px)`
   })
- 
-
 }
-//add href attr
+//set href attr
 window.addEventListener('load',()=>{
-   
   for(let d = 0 ; d<projects.length;d++){
     let projectId= `project${d}`
     projects[d].setAttribute('id',projectId)
-
-   }
-
+  }
   })
-  // const nav =document.querySelector('#nav')
-  // window.addEventListener('scroll',()=>{
-  //     if (window.scrollY > nav.offsetTop) {    
-  //         nav.classList.add('active');
-  //       } else {
-  //         nav.classList.remove('active');    
-  //       }
-  // })
-  const sidemenu =document.querySelector('.list-project .sideMenu')   
-//   locoScroll.on('scroll', (args) => {
-//     if (args.delta != undefined) {
-//         let scrTop1 = args.delta.y
-//         if (scrTop1 > 100) {
-//           console.log('baa');
-//           sidemenu.classList.add('sticky');
-//         } else {
-//           sidemenu.classList.remove('sticky'); 
-//         }
-//     }
-// })
- 
-
-
 // Mouse
 let hasCircle = document.querySelectorAll(`.hasCircle`)
 let mouseCircle = document.querySelector(`.mouseCircle`)
@@ -101,4 +63,4 @@ if (hasCircle.length > 0) {
 //gsap-----------------------------------------------------------------
 gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
 gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
-gsap.from('.container #sec1 .one header nav ul li a::after',{duration:2,width:0})
+

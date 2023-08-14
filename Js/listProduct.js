@@ -1,3 +1,7 @@
+let product = document.getElementsByClassName('product')
+let arrayProduct = Object.keys(product)
+const row = document.querySelector('.listProduct #sec2 .two .row2')
+const nav =document.querySelector('#nav')
 // Enable Scroll
 if (document.querySelector(`[data-scroll-container]`) != undefined) {
   let locoScroll = new LocomotiveScroll({
@@ -26,9 +30,6 @@ document.addEventListener('scroll', () => {
 })
 
 // hover product--------------------------------------------------------
-let product = document.getElementsByClassName('product')
-let arrayProduct = Object.keys(product)
-
 for(let i = 0; i<product.length;i++){
     product[i].addEventListener('mouseover',(e)=>{
     e.stopPropagation()
@@ -50,24 +51,13 @@ for(let i = 0; i<product.length;i++){
     product[i].classList.remove('hover')
     })
 }
-const row = document.querySelector('.listProduct #sec2 .two .row2')
 row.addEventListener('mouseover',(e)=>{
-  
         for(let i = 0; i<product.length;i++){{
           product[i].classList.remove('hover')
         }
-    }
-   
+    } 
 })
-
-const nav =document.querySelector('#nav')
-window.addEventListener('scroll',()=>{
-    if (window.scrollY > nav.offsetTop) {    
-        nav.classList.add('active');
-      } else {
-        nav.classList.remove('active');    
-      }
-})
+//fade effect when load page
 const appearOptions ={
     rootMargin: "0px",
     threshold:.75,
@@ -90,4 +80,4 @@ const appearOptions ={
   //gsap-----------------------------------------------------------------
 gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
 gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
-gsap.from('.container #sec1 .one header nav ul li a::after',{duration:2,width:0})
+

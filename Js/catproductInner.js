@@ -1,9 +1,4 @@
-
-//gsap-----------------------------------------------------------------
-gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
-gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
-gsap.from('.container #sec1 .one header nav ul li a::after',{duration:2,width:0})
-
+let btn = document.querySelectorAll('.arrow')
 // Enable Scroll
 if (document.querySelector(`[data-scroll-container]`) != undefined) {
   let locoScroll = new LocomotiveScroll({
@@ -38,31 +33,28 @@ let swiper = new Swiper(".mySwiper", {
      
     },
     spaceBetween: 50,
-  //   effect: "cube",
-grabCursor: true,
-cubeEffect: {
- shadow: true,
- slideShadows: true,
- shadowOffset: 20,
- shadowScale: 0.94,
+    grabCursor: true,
+    cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
 },
-navigation: {
-  nextEl: ".swiper-button-next",
-  prevEl: ".swiper-button-prev",
+    navigation: {
+     nextEl: ".swiper-button-next",
+     prevEl: ".swiper-button-prev",
 },
 });
-
-
 // arrow button--------------------------------------------------------
-let btn = document.querySelectorAll('.arrow')
-let arrow = document.querySelectorAll('.ar')
 btn.forEach((b)=>{
-b.addEventListener('mousemove',()=>{
-  for(let i=0;i<=arrow.length;i++)
-  arrow[i].setAttribute('src','../images/icons8-left-arrow-30 (1).png')
-})
-b.addEventListener('mouseleave',()=>{
-  for(let i=0;i<=arrow.length;i++)
-  arrow[i].setAttribute('src','../images/icons8-left-arrow-30.png')
-})
-})
+  b.addEventListener('mouseenter',()=>{
+    b.children[0].children[0].setAttribute('src','../images/icons8-left-arrow-30 (1).png')
+  })
+  b.addEventListener('mouseleave',()=>{
+    b.children[0].children[0].setAttribute('src','../images/icons8-left-arrow-30.png')
+  })
+  })
+//gsap-----------------------------------------------------------------
+gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
+gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
+

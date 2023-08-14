@@ -1,9 +1,11 @@
-
+const nav =document.querySelector('#nav')
 const btnContainer = document.getElementsByClassName('menu__list');
-let btns = btnContainer[0].getElementsByClassName('menu__link');
+const sec2 =document.querySelector('#sec2')
+const sidemenu =document.querySelector('.sideMenu')
+let btns = document.querySelectorAll('.menu__link');
 let menuActive = document.getElementsByClassName('menu__active')
 let current = document.getElementsByClassName('_active')
-
+let sections = document.querySelectorAll('.section')
 // Enable Scroll
 if (document.querySelector(`[data-scroll-container]`) != undefined) {
   let locoScroll = new LocomotiveScroll({
@@ -16,7 +18,23 @@ if (document.querySelector(`[data-scroll-container]`) != undefined) {
           let scrTop = args.delta.y
           if (scrTop > 80) {
           
-              document.querySelector(`header`).classList.add('active')
+ // change active menu on scroll           
+sections.forEach(sec =>{
+  let top = scrTop;
+  let offset = sec.offsetTop+550;
+  let height= sec.offsetHeight;
+  let id =sec.getAttribute('id')
+  if(top>= offset && top < offset + height){
+   btns.forEach(btn=>{         
+      btn.classList.remove('_active');
+      document.querySelector('.menu__list .menu__item a[href*='+id + ']').classList.add('_active')
+      menuActive[0].style.top =`calc(${(document.querySelector('.menu__list .menu__item a[href*='+id + ']').offsetTop)+10}px)` 
+    
+     })
+    
+  }
+ })
+          document.querySelector(`header`).classList.add('active')
           } else {
               document.querySelector(`header`).classList.remove('active')
           }
@@ -116,54 +134,6 @@ for(let i=0;i<btns.length ; i++){
  
 
 }
-  const nav =document.querySelector('#nav')
-  window.addEventListener('scroll',()=>{
-      // if (window.scrollY > nav.offsetTop) {  
-          
-      //     nav.classList.add('active');
-      
-      //     if(window.scrollY>=700){
-           
-      //       current[0].className = current[0].className.replace('_active', '')
-      //       btns[0].classList.add('_active')
-      //       menuActive[0].style.top=`calc(38px)`
-      //     }
-      //     if(window.scrollY>=1000){
-           
-      //       current[0].className = current[0].className.replace('_active', '')
-      //       btns[1].classList.add('_active')
-      //       menuActive[0].style.top=`calc(38px + ${1*28}px)`
-      //     }
-      //     if(window.scrollY>=1600){
-           
-      //       current[0].className = current[0].className.replace('_active', '')
-      //       btns[2].classList.add('_active')
-      //       menuActive[0].style.top=`calc(38px + ${2*28}px)`
-      //     }
-      //     if(window.scrollY>=2060){
-           
-      //       current[0].className = current[0].className.replace('_active', '')
-      //       btns[3].classList.add('_active')
-      //       menuActive[0].style.top=`calc(38px + ${3*28}px)`
-      //     }
-      //    } 
-      //   else {
-      //     nav.classList.remove('active');    
-      //   }
-  })
-
-
-const sec2 =document.querySelector('#sec2')
-  const sidemenu =document.querySelector('.sideMenu')
-  window.addEventListener('scroll',(e)=>{
-
-    if (window.scrollY >690.4000244140625) {    
-        sidemenu.classList.add('sticky');
-      } else {
-        sidemenu.classList.remove('sticky');    
-      }
-})
-
 //gsap-----------------------------------------------------------------
 gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
 gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})

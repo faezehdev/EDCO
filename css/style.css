@@ -154,38 +154,6 @@ header{
     -o-transition: all .5s ease;
 
 }
-/* ! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll
-html.has-scroll-smooth {
-    overflow: hidden;
-  }
-  
-  html.has-scroll-dragging {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  .has-scroll-smooth body {
-    overflow: hidden;
-  }
-  
-  .has-scroll-smooth [data-scroll-container] {
-    min-height: 100vh;
-  }
-  
-  [data-scroll-direction=horizontal] [data-scroll-container] {
-    height: 100vh;
-    display: inline-block;
-    white-space: nowrap;
-  }
-  
-  [data-scroll-direction=horizontal] [data-scroll-section] {
-    display: inline-block;
-    vertical-align: top;
-    white-space: nowrap;
-    height: 100%;
-  } */
  header nav{
 width: 100%;
 height: 100%;
@@ -508,7 +476,6 @@ footer .row2 .col2{
 .container #sec2 .two{
     width: 100%;
     height: 100%;
-    /* background-image: url('../Assets/Pictures/Home/post2.png'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -629,9 +596,6 @@ footer .row2 .col2{
 .container #sec2 .two .content .textBox .btn button:hover::after{
 width: 100% !important;
 }
-.container #sec2 .two .content .textBox .btn button:hover a{
-
-    }
 .container #sec2 .two .content .textBox .btn button a{
     color: var(--white);
     font-size: 16px;
@@ -646,7 +610,6 @@ width: 100% !important;
     left: 0;
     z-index: 10000;
 }
-
 /*------------------------- section three------------------------------- */
 .container #sec3{
     width: 100vw;
@@ -865,8 +828,6 @@ width: 100% !important;
     height: 14.4px;
     margin-right: 0.5rem;
 }
-
-
 /*------------------------- section four------------------------------- */
 .container #sec4 .four .row1 .projectTitle{
 width: 100%;
@@ -910,17 +871,9 @@ align-items: center;
     position: relative;
 }
 .container #sec4 .four .projects .project{
-    /* width: 816px; */
     height: 587px;
     display: flex;
     flex-direction: column;
-    /* transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out; */
-
-   
     max-width: 50%;
 }
 .container #sec4 .four .projects .project.right{
@@ -939,7 +892,6 @@ align-items: center;
     object-fit: cover;
    
 }
-
 .container #sec4 .four .projects .project:hover a{
     width: 95% ;
 }
@@ -1003,8 +955,6 @@ align-items: center;
     -webkit-border-radius: 3px;
     top: -120%;
 }
-
-
 /*------------------------- section five------------------------------- */
 
 .container #sec5{
@@ -1065,7 +1015,6 @@ z-index: 1;
 .container #sec5 .five .videoControl #PlayPuase:hover{
     cursor: pointer;
 }
-
 /*------------------------- section six------------------------------- */
 .container #sec6{
     width: 100%;
@@ -1168,9 +1117,6 @@ z-index: 1;
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
-}
-.container #sec6 .six .posts .post .postBtn {
-
 }
 .container #sec6 .six .posts .post .postBtn button{
     background-color: transparent;
@@ -1337,7 +1283,6 @@ z-index: 1;
     width: 100%;
     height: 100%;
   }
-
   .catProduct #sec1 .one .sliderContainer .swiper-slide {
     width: 100%;
     height: 100%;
@@ -1722,8 +1667,6 @@ z-index: 1;
     position: relative;
  
 }
-
-
 .catProductInner #sec1 .one .sliderContainer{
     width: 100%;
     margin-top: 7rem;
@@ -1857,7 +1800,6 @@ z-index: 1;
 width: 85%;
 object-fit: contain;
 height: 90%;
-
 }
 .catProductInner #sec2 .two .productContainer .productBox .col2{
     width: 100%;
@@ -1867,7 +1809,6 @@ height: 90%;
     justify-content:flex-start;
     align-items: center;
     direction: ltr;
-
 }
 .catProductInner #sec2 .two .productContainer .productBox .col2 .productTitle{
     width: 100%;
@@ -1932,7 +1873,6 @@ height: 90%;
    border: 1px solid var(--homeafter);
    position: relative;
 }
-
 .catProductInner #sec2 .two .productBtn button::after{
     position: absolute;
     content: '';
@@ -1980,7 +1920,6 @@ height: 90%;
     height: 14.4px;
     margin-right: 0.5rem;
 }
-
 
 .catProductInner #sec2 .two .productContainer .productBox .col1 .productImage{
     width: 70%;
@@ -2144,7 +2083,6 @@ height: 90%;
     -o-transition: all .3s ease-in;
 }
 
-
 .listProduct #sec2 .two .row2 .productContainer .fade-in{
     opacity: 0 !important;
     transform: translateY(-10%)!important;
@@ -2177,11 +2115,6 @@ height: 90%;
     -ms-transition: all .3s ease-in;
     -o-transition: all .3s ease-in;
 }
-
-
-
-
-
 .listProduct #sec2 .two .row2 .productContainer .product .productDetail{
     width: 100%;
     display: flex;
@@ -2194,7 +2127,6 @@ height: 90%;
     color: var(--homeText);
 }
 /*------------------------------ list product page sec3 footer----------------------------------- */
-
 .listProduct #sec3{
     width: 100%;
     margin-top: 8rem;
@@ -2203,7 +2135,6 @@ height: 90%;
     align-items: center;
     background-color: var(--footer);
 }
-
 /*------------------------------  product page sec 1----------------------------------- */
 .product{
     width: 100%;
@@ -2315,30 +2246,6 @@ margin-top: 7rem;
     top: 0;
     left: 0;
 }
- .product #sec2 .two .col1 .sideMenu.sticky {
-    /* width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
-   
-    position: sticky !important;
-    top: 0% !important;
-    right: 0% !important;
-    background-color: #fff !important;
-    transition: transform .5s ease;
-    -webkit-transition: transform .5s ease;
-    -moz-transition: transform .5s ease;
-    -ms-transition: transform .5s ease;
-    -o-transition: transform .5s ease;
-    transform: translateY(0%);
-    -webkit-transform: translateY(0%);
-    -moz-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    -o-transform: translateY(0%); */
-    
-}
 .product #sec2 .two .col1 .sideMenu.sticky .menu__active{
     width: 27px;
 }
@@ -2368,8 +2275,6 @@ list-style-type: none;
  -o-transition: color .8s ease 0s;
 
 }
-
-
 .product #sec2 .two .col1 .sideMenu .menu__active{
     position: absolute;
     top: 9px;
@@ -2497,9 +2402,6 @@ list-style-type: none;
 .product #sec2 .two .col2 .row2 .product .aboutProduct .row .value >a{
     color: var(--homeafter);
 }
-
-
-
  .productSlider{
     width: 450px;
     height: 400px;
@@ -2604,64 +2506,56 @@ color: var(--homeText)!important;
 }
 .product #sec2 .two .col2 .row4 .projects .project{
     width: 100%;
-    display: grid;
-    gap: 3rem;
-  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
   margin-top: 2rem;
 }
 .product #sec2 .two .col2 .row4 .projects .project .box{
-          width: 100%;
+        
           height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
           position: relative;
-          transition: all .5s ease;
-          -webkit-transition: all .5s ease;
-          -moz-transition: all .5s ease;
-          -ms-transition: all .5s ease;
-          -o-transition: all .5s ease;
 }
-.product #sec2 .two .col2 .row4 .projects .project .box:hover{
-    cursor: pointer;
-    transform: scale(.97);
-    -webkit-transform: scale(.97);
-    -moz-transform: scale(.97);
-    -ms-transform: scale(.97);
-    -o-transform: scale(.97);
-}
-.product #sec2 .two .col2 .row4 .projects .project .box:nth-child(1){
-   
-    justify-content: center;
-    align-items: center;
-}
-.product #sec2 .two .col2 .row4 .projects .project .box:nth-child(1) .firImg{
-    width: 333.44px;
-    height:333.49px;
+.product #sec2 .two .col2 .row4 .projects .project .box a{
     display: flex;
     justify-content: center;
     align-items: center;
-    object-fit: cover;
-    position: relative;
-}
-.product #sec2 .two .col2 .row4 .projects .project .box:nth-child(1) .firImg img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    max-width: 100%;
-
+    transition: all 1000ms ease-in-out;
+    -webkit-transition: all 1000ms ease-in-out;
+    -moz-transition: all 1000ms ease-in-out;
+    -ms-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
+    position: relative;
 }
-.product #sec2 .two .col2 .row4 .projects .project .box:nth-child(1) .firImg .overlay{
+.product #sec2 .two .col2 .row4 .projects .project .box a:hover{
+    cursor: pointer;
+  width: 95%;
+}
+
+.product #sec2 .two .col2 .row4 .projects .project .box a:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.product #sec2 .two .col2 .row4 .projects .project .box .firImg {
     position: absolute;
     top: 0;
     width: 85%;
     height: 85%;
     left: 0;
     border: 2px solid var(--white);
-    transform: translate(20px, 23px);
-}
-.product #sec2 .two .col2 .row4 .projects .project .box:nth-child(2){
-    position: relative;
+    transform: translate(23px, 23px);
+    -webkit-transform: translate(23px, 23px);
+    -moz-transform: translate(23px, 23px);
+    -ms-transform: translate(23px, 23px);
+    -o-transform: translate(23px, 23px);
 }
 .product #sec2 .two .col2 .row4 .projects .project .box .projectImage{
     width: 333.44px;
@@ -2670,12 +2564,22 @@ color: var(--homeText)!important;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1000ms ease-in-out;
+    -webkit-transition: all 1000ms ease-in-out;
+    -moz-transition: all 1000ms ease-in-out;
+    -ms-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
 }
 .product #sec2 .two .col2 .row4 .projects .project .box .projectImage img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     max-width: 100%;
+    transition: all 1000ms ease-in-out;
+    -webkit-transition: all 1000ms ease-in-out;
+    -moz-transition: all 1000ms ease-in-out;
+    -ms-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
 }
 .product #sec2 .two .col2 .row4 .projects .project .box .projectName{
     position: absolute;
@@ -2686,8 +2590,6 @@ color: var(--homeText)!important;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background: linear-gradient(transparent 0%, #1F1F1F 100%);
-
 }
 .product #sec2 .two .col2 .row4 .projects .project .box .projectName h3{
     font-size: 14px;
@@ -2695,15 +2597,9 @@ color: var(--homeText)!important;
     border-bottom: 2px solid var(--white);
     color: var(--white);
     padding-bottom: 1%;
+    position: relative;
+    z-index: 10;
 }
-.product #sec2 .two .col2 .row4 .projects .project .box .projectImage:hover{
-    cursor: pointer;
-}
-.product #sec2 .two .col2 .row4 .projects .project .box .projectImage:hover .box:nth-child(2) .projectName{
-height: 100%;
-
-}
-
 .product #sec2 .two .col2 .row4 .projects .project .box .overlay{
     position: absolute;
     top: 0;
@@ -2711,19 +2607,25 @@ height: 100%;
     width: 100%;
     height: 100%;
     left: 0;
-    background:linear-gradient(270deg, transparent 0%, #222226 100%);
-    transition: opacity .5s ease;
-    -webkit-transition: opacity .5s ease;
-    -moz-transition: opacity .5s ease;
-    -ms-transition: opacity .5s ease;
-    -o-transition: opacity .5s ease;
+    background: #222226 ;
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
+    -webkit-transition: all 1000ms ease-in-out;
+    -moz-transition: all 1000ms ease-in-out;
+    -ms-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
+    margin: 0 auto;
 }
-.product #sec2 .two .col2 .row4 .projects .project .box:hover .overlay{
-opacity: 1;
+.product #sec2 .two .col2 .row4 .projects .project .box a:hover .overlay{
+     opacity: .6;
+     transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     -o-transform: scale(1.1);
+     width: 100%;
+     height: 100%;
 }
-
-
-
  /*------------------------------  product page sec 3 footer----------------------------------- */
 .product #sec3{
     width: 100%;
@@ -2735,14 +2637,10 @@ opacity: 1;
     z-index: 100;
     position: relative;
 }
-
-
  /*------------------------------  list project page sec 1----------------------------------- */
  .list-project{
     width: 100%;
-    height: 100%;
-    /* direction: ltr; */
-   
+    height: 100%;  
 }
 .list-project #sec1{
     width: 100vw;
@@ -2762,7 +2660,6 @@ opacity: 1;
     max-width: 100%;
     position: relative;
 }
-
 .list-project #sec1 .one .row{
 width: 100%;
 height: 80%;
@@ -2803,11 +2700,7 @@ align-items: center;
     width: 150px;
     height: 185px;
  }
-
  /*------------------------------  list project page sec 2----------------------------------- */
-
-
-
  .list-project #sec2{
     width: 100vw;
     height: max-content;
@@ -2865,7 +2758,6 @@ align-items: center;
     margin-top: 5rem;
 
 }
-
 .list-project #sec2 .two .projects .col1{
     width: 100%;
     height: 100%;
@@ -2880,8 +2772,6 @@ align-items: center;
     top: 7.6rem;
     left: 0;
 }
-
-
  .list-project #sec2 .two .projects .col1 .sideMenu ul.menu__list{
 padding-right: 4rem;
  display: grid;
@@ -2991,27 +2881,25 @@ list-style-type: none;
     width:85%;
     border: 2.34px solid var(--white);
     height: 85%;
-    transform: translate(26px,26px);
-    -webkit-transform: translate(26px,26px);
-    -moz-transform: translate(26px,26px);
-    -ms-transform: translate(26px,26px);
-    -o-transform: translate(26px,26px);
+    transform: translate(25px,25px);
+    -webkit-transform: translate(25px,25px);
+    -moz-transform: translate(25px,25px);
+    -ms-transform: translate(25px,25px);
+    -o-transform: translate(25px,25px);
 }
 .list-project #sec2 .two .projects .col2 .projectBoxes .box .projectName{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem 0;
 }
 .list-project #sec2 .two .projects .col2 .projectBoxes .box .projectName h3{
   font-size: 14.31px;
   font-weight: 600;
   color: var(--homeText);
+  margin: 0;
 }
-
-
-
-
  /*------------------------------  list project page sec 3 footer----------------------------------- */
  .list-project #sec3{
     width: 100%;
@@ -3024,7 +2912,6 @@ list-style-type: none;
     z-index: 0;
 }
  /*------------------------------ project page sec 1----------------------------------- */
-
  .project{
     width: 100%;
     height: 100%;
@@ -3050,8 +2937,6 @@ list-style-type: none;
     position: relative;
 
 }
-
-
 .project #sec1 .one .row{
 width: 100%;
 height: 80%;
@@ -3100,7 +2985,7 @@ position: relative;
     justify-content: center;
     align-items: center;
     }
-    .project #sec1  .one .sliderContainer .swiper-slide {
+.project #sec1  .one .sliderContainer .swiper-slide {
         width: 100%;
         height: 100%;
         text-align: center;
@@ -3109,16 +2994,16 @@ position: relative;
         justify-content: center;
         align-items: center;
         position: relative;
-      }
-      .project #sec1 .one .row >img {
+}
+.project #sec1 .one .row >img {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 100%;
         object-fit: cover;
-      }
-      .project #sec1 .one .row .row1{
+}
+.project #sec1 .one .row .row1{
         position: absolute;
         width: 35%;
         height: 100%;
@@ -3128,14 +3013,12 @@ position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-      .project #sec1 .one .row .row1 img{
+}
+.project #sec1 .one .row .row1 img{
         width: 150px;
         height: 185px;
-     }
-
-      /*------------------------------ project page sec 2----------------------------------- */
-
+}
+ /*------------------------------ project page sec 2----------------------------------- */
 .project #sec2{
     width: 100%;
     display: flex;
@@ -3177,7 +3060,6 @@ position: relative;
     color: var(--homeText);
     padding-right: 20rem;
 }
-
 /*------------------------------ project page sec 3----------------------------------- */
 .project #sec3{
     width: 100%;
@@ -3199,39 +3081,11 @@ position: relative;
  .project #sec3 .three .col1 .sideMenu{
     width: 100%;
     height: 100%;
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: flex-start; */
     position: fixed;
     overflow: hidden;
     list-style-type: none;
     top: 0;
     left: 0;
-}
-
- .project #sec3 .three .col1 .sideMenu.sticky {
-    /* width: 15%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
-    overflow: hidden;
-    list-style-type: none;
-    position: fixed !important;
-    top: 20% !important;
-    right: 0% !important;
-    background-color: #fff !important;
-    transition: transform .5s ease;
-    -webkit-transition: transform .5s ease;
-    -moz-transition: transform .5s ease;
-    -ms-transition: transform .5s ease;
-    -o-transition: transform .5s ease;
-    transform: translateY(0%);
-    -webkit-transform: translateY(0%);
-    -moz-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    -o-transform: translateY(0%); */
 }
 .project #sec3 .three .col1 .sideMenu.sticky .menu__active{
     width: 50px;
@@ -3261,7 +3115,6 @@ list-style-type: none;
  -o-transition: color .8s ease 0s;
 }
 
-
 .project #sec3 .sideMenu ul.menu__list li.menu__item .__active {
     color: var(--homeText) !important;
 }
@@ -3284,7 +3137,6 @@ list-style-type: none;
     -o-transition: all .8s ease 0s;
     transform-origin: center;
 }
-
 .project #sec3 .three .col2{
     width: 100%;
 
@@ -3300,8 +3152,7 @@ list-style-type: none;
 .project #sec3 .three .col2 .projectImages .img{
     width: 100%;
     height: 100%;
-    margin-top: 2rem;
-   
+    margin-top: 2rem; 
 }
 .project #sec3 .three .col2 .projectImages .img:nth-child(1) {
    
@@ -3412,15 +3263,6 @@ list-style-type: none;
     margin-bottom: 5rem;
     align-items: center;
 }
-.project #sec4 .four{
-    /* width: 75%;
-    height: 100%;
-    transform: translateX(-78px);
-    -webkit-transform: translateX(-78px);
-    -moz-transform: translateX(-78px);
-    -ms-transform: translateX(-78px);
-    -o-transform: translateX(-78px); */
-}
 .project #sec4 .four .row1{
     display: flex;
     flex-direction: column;
@@ -3452,8 +3294,6 @@ list-style-type: none;
     margin:0 2%;
     flex-shrink: 0 !important;
 }
-
-
 .project #sec4 .four .row1 .products .productsSlider .Swiperone .swiper-slide .image{
     width:150px !important;
     height: 150px !important;
@@ -3481,8 +3321,6 @@ list-style-type: none;
 .project #sec4 .four .row1 .products .productsSlider  .swiper .swiper-button-prev::after, .productSlider .swiper .swiper-button-prev::after, .productSlider .swiper .swiper-button-next::after {
     color: var(--white);
 }
-
-
 .project #sec4 .four .row1 .titleRow{
     width: 100%;
     display: flex;
@@ -3504,8 +3342,6 @@ list-style-type: none;
     color: var(--homeText);
     padding-right: 1rem;
 }
-
-
 /*------------------------------ project page sec 5 footer----------------------------------- */
 .project #sec5{
     width: 100%;
@@ -3524,7 +3360,6 @@ list-style-type: none;
     direction: ltr;
   
 }
-
 .list-article #sec1{
     width: 100vw;
     display: flex;
@@ -3541,7 +3376,6 @@ list-style-type: none;
     align-items: center;
     max-width: 100%;
     position: relative;
-
 }
 
 .list-article #sec1 .one .row{
@@ -3558,7 +3392,7 @@ list-style-type: none;
     width: 100%;
     height: 100%;
     background: hsla(0, 0%, 0%, 1);
-opacity: .2;
+    opacity: .2;
 }
 .list-article #sec1 .one .row img{
     width: 100%;
@@ -3566,7 +3400,6 @@ opacity: .2;
     max-width: 100%;
     object-fit: cover;
 }
-
 
 /*------------------------------ list article page sec 2----------------------------------- */
 .list-article #sec2{
@@ -3701,7 +3534,6 @@ opacity: .2;
     justify-content: center;
     padding: 1rem 0;
 }
-
 .list-article #sec2 .two .articles .article .articleBtn button::after{
     content: '';
     position: absolute;
@@ -3745,9 +3577,6 @@ opacity: .2;
     width: 100%;
     color: var(--homeText);
 }
-
-
-
 .list-article #sec2 .two .articles .article .articleBtn button{
     background-color: transparent;
     border: none;
@@ -3756,8 +3585,6 @@ opacity: .2;
 .list-article #sec2 .two .articles .article .articleBtn button:hover{
     cursor: pointer;
 }
-
-
 /*------------------------------ list article page sec 3 footer----------------------------------- */
 
 .list-article #sec3{
@@ -3768,10 +3595,6 @@ opacity: .2;
     align-items: center;
     background-color: var(--footer);
 }
-
-
-
-
 /*------------------------------ article page sec 1----------------------------------- */
 .article{
     width: 100%;
@@ -3779,7 +3602,6 @@ opacity: .2;
     direction: ltr;
   
 }
-
 .article #sec1{
     width: 100vw;
     height: 30vh;
@@ -3799,7 +3621,6 @@ opacity: .2;
     position: relative;
 
 }
-
 .article #sec1 .one .row{
     width: 100%;
     height: 39rem;
@@ -3813,8 +3634,6 @@ opacity: .2;
     height: 100%;
     max-width: 100%;
 }
-
-
 /*------------------------------ article page sec 2----------------------------------- */
 .article #sec2{
     width: 100vw;
@@ -3869,8 +3688,6 @@ opacity: .2;
 max-width: 100%;
 width: 100%;
 }
-
-
 /*------------------------------ article page sec 3----------------------------------- */
 
 .article #sec3{
@@ -3912,7 +3729,6 @@ width: 100%;
     color: var(--article);
     line-height: 31.44px;
 }
-
 /*------------------------------ article page sec 4----------------------------------- */
 .article #sec4{
     width: 100%;
@@ -3976,8 +3792,6 @@ width: 100%;
     line-height: 31.44px;
     margin: 0;
 }
-
-
 /*------------------------------ article page sec 5----------------------------------- */
 .article #sec5{
     width: 100%;
@@ -4062,8 +3876,6 @@ width: 100%;
     gap: 2rem;
     margin-top: 2rem;
 }
-
-
 
 .article #sec6 .six .articles .articlePost{
     width: 100%;
@@ -4188,7 +4000,6 @@ width: 100%;
     width: 100%;
     color: var(--homeText);
 }
-
 /*------------------------------ article page sec 7 footer----------------------------------- */
 .article #sec7{
     width: 100%;
@@ -4197,9 +4008,7 @@ width: 100%;
     justify-content: center;
     align-items: center;
     background-color: var(--footer);
-}
-
-    
+}  
  /*------------------------------aboutUs page sec 1----------------------------------- */   
 .aboutUs{
     width: 100%;
@@ -4225,85 +4034,6 @@ width: 100%;
     position: relative;
 
 }
-
-/* 
-.aboutUs #sec1 .one header
-    {
-    display: grid;
-    grid-template-columns:1fr 6fr;
-    gap: 3rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background-color: var(--white);
-    width: 100%;
-
-}
-.aboutUs #sec1 .one header.active{
-   
-    transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-}
-
-
-.aboutUs #sec1 .one header nav{
-width: 100%;
-height: 100%;
-}
-.aboutUs #sec1 .one header nav ul{
-    height: 100%;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-   padding-right: 6.5rem;
-    margin-top: -0.8rem;
-}
-.aboutUs #sec1 .one header nav ul li{
-    list-style-type: none;
-    padding-left: 2rem;
-}
-.aboutUs #sec1 .one header nav ul li a{
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--homeText);
-    line-height: 25.1px;
-    position: relative;
-}
-.aboutUs #sec1 .one header nav ul li a:before {
-    width: 0;
-    color: var(--homeafter);
-    content: attr(data-text);
-    position: absolute;
-    overflow: hidden !important;
-    transition:all .5s cubic-bezier(0.84,0,0.8,0.99) ;
-    -webkit-transition:all .5s cubic-bezier(0.84,0,0.8,0.99) ;
-    -moz-transition:all .5s cubic-bezier(0.84,0,0.8,0.99) ;
-    -ms-transition:all .5s cubic-bezier(0.84,0,0.8,0.99) ;
-    -o-transition:all .5s cubic-bezier(0.84,0,0.8,0.99) ;
-  }
-  .aboutUs #sec1 .one header nav ul li a:hover:before{
-    width: 100%;
-}
-.aboutUs #sec1 .one header .logo{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-top: 1rem;
-  
-}
-.aboutUs #sec1 .one header .logo img{
-    transform: translateX(1.3rem);
-    -webkit-transform: translateX(1.3rem);
-    -moz-transform: translateX(1.3rem);
-    -ms-transform: translateX(1.3rem);
-    -o-transform: translateX(1.3rem);
-} */
 .aboutUs #sec1 .one .row{
     width: 100%;
     height: 39rem;
@@ -4332,7 +4062,6 @@ height: 100%;
     height: 100%;
     max-width: 100%;
 }
-
  /*------------------------------aboutUs page sec 2----------------------------------- */   
  .aboutUs  #sec2{
     width: 100vw;
@@ -4426,9 +4155,7 @@ height: 100%;
 .aboutUs  #sec2 .two .row2 .col .image img{
     max-width: 100%;
 }
-
 /*------------------------------aboutUs page sec 3----------------------------------- */   
-
 .aboutUs  #sec3{
     width: 100vw;
     display: flex;
@@ -4697,7 +4424,6 @@ height: 100%;
     align-items: center;
     background-color: var(--footer);
 }
-
 /*------------------------------contactUs page sec 1----------------------------------- */ 
 .contactUs{
     width: 100%;
@@ -4722,7 +4448,6 @@ height: 100%;
     position: relative;
 
 }
-
 .contactUs #sec1 .one .row{
     width: 100%;
     height: 39rem;
@@ -4737,9 +4462,7 @@ height: 100%;
     height: 100%;
     max-width: 100%;
 }
-
 /*------------------------------contactUs page sec 2----------------------------------- */ 
-
 .contactUs #sec2{
     width: 100vw;
     display: flex;
@@ -4865,10 +4588,7 @@ height: 100%;
 .contactUs #sec2 .two .row2 .col .map img{
     max-width: 100%;
 }
-
 /*------------------------------contactUs page sec 3----------------------------------- */ 
-
-
 .contactUs #sec3{
     width: 100vw;
     display: flex;
@@ -4987,8 +4707,6 @@ height: 100%;
     direction: ltr;
     padding-left: 5%;
 }
-
-
 /*------------------------------contactUs page sec 4 footer----------------------------------- */
 .contactUs #sec4{
     width: 100%;
