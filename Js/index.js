@@ -5,6 +5,16 @@ const playBTN =document.getElementById("PlayPuase")
 const video = document.getElementById("video-elem")
 const pauseBtn = document.querySelector('.container .five')
 let btn = document.querySelectorAll('.arrow')
+let header=document.querySelector('.bg')
+window.onload = function() {
+  header.classList.remove('bg')    
+    //gsap-----------------------------------------------------------------
+gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
+gsap.to('#nav',{duration:1,y:'0%',ease: "slow(0.7, 0.7, false)"})
+gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})  
+
+  }
+
 // Enable Scroll
 if (document.querySelector(`[data-scroll-container]`) != undefined) {
   let locoScroll = new LocomotiveScroll({
@@ -114,14 +124,17 @@ if (hasCircle.length > 0) {
 }
 // arrow button--------------------------------------------------------
 btn.forEach((b)=>{
-b.addEventListener('mouseenter',()=>{
-  b.children[0].children[0].setAttribute('src','../images/icons8-left-arrow-30 (1).png')
-})
-b.addEventListener('mouseleave',()=>{
-  b.children[0].children[0].setAttribute('src','../images/icons8-left-arrow-30.png')
-})
-})
-//gsap-----------------------------------------------------------------
-gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
-gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
+  b.addEventListener('mouseenter',()=>{
+    setTimeout(()=>{
+      b.children[0].children[0].setAttribute('src','../images/icons8-left-arrow-30 (1).png')
+    },500)
+   
+  })
+  b.addEventListener('mouseleave',()=>{
+    setTimeout(()=>{
+    b.children[0].children[0].setAttribute('src','../images/icons8-left-arrow-30.png')
+  },100)
+  })
+  })
+
 

@@ -1,0 +1,98 @@
+<basis core="dbsource" source="basiscore" name="basisName" lid="2" mid="20" >
+    <member request="cat" type="tree" name="productCat" parentid="71218"></member>
+    </basis>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>edco</title>
+        <link
+        rel="stylesheet"
+        href="../node_modules/locomotive-scroll/dist/locomotive-scroll.min.css"
+      />
+        <link rel="stylesheet" href="../css/style.css">
+       <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+    </head>
+    <body>
+         <basis core="call" file="header.inc" />
+        <main>
+        <div class=" catProduct" data-scroll-container>
+            <section id="sec1" data-scroll-section>
+               <div class="one" data-scroll>
+                <div class="sliderContainer">
+                     <!-- Swiper -->
+                      <div class="swiper mySwiper">
+                           <div class="swiper-wrapper">
+                             <div class="swiper-slide">
+                                 <img src="../images/cat1-banner1.jpg" alt="">
+                                 <div class="row1">
+                                 
+                                </div>
+                           </div>
+                           <div class="swiper-slide">
+                               <img src="../images/cat1-banner2.jpg" alt="">
+                               <div class="row1">
+                        
+                              </div>
+                          </div>
+                         <div class="swiper-slide">
+                             <img src="../images/cat1-banner3.jpg" alt="">
+                             <div class="row1">
+                                
+                             </div>
+                         </div>
+       
+                        </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+               </div>
+            </section>
+            <section id="sec2" data-scroll-section>
+                <div class="two" data-scroll>
+                    <div class="row1">
+                        <div class="productTitle">
+                            <h2>Edco product</h2>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="products">
+    <basis core="print" datamembername="basisName.productCat">
+        <face filter="parentid in (71218)">
+                            <div class="productBox fade-in" >
+                                <a href="/@link">
+                                <div class="productImage">
+                                    <img src="/@image" alt="">
+                                </div>
+                                <div class="productName">
+                                    <p>@title</p>
+                                </div>
+                            </a>
+                            </div>
+    </face>
+    </basis>
+                         
+                     
+            
+    
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sec3" data-scroll-section>
+                     <basis core="call" file="footer.inc" />
+            </section>
+    
+        </div>
+    </main>
+        <script src="../js/scroll.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+        <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+        <script  src="../js/catProduct.js"></script>
+      
+    </body>
+    </html>

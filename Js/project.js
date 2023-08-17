@@ -1,3 +1,9 @@
+window.onload = function() {
+  //gsap-----------------------------------------------------------------
+gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
+gsap.to('#nav',{duration:1,y:'0%',ease: "slow(0.7, 0.7, false)"})
+gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})      
+}
 const nav =document.querySelector('#nav')
 const btnContainer = document.getElementsByClassName('menu__list');
 let btns = document.querySelectorAll('.menu__link');
@@ -79,6 +85,3 @@ let swiper = new Swiper(".Swipertwo", {
     prevEl: ".swiper-button-prev",
   },
  });
-//gsap-----------------------------------------------------------------
-gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
-gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})

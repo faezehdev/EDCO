@@ -1,3 +1,9 @@
+window.onload = function() {
+    //gsap-----------------------------------------------------------------
+gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
+gsap.to('#nav',{duration:1,y:'0%',ease: "slow(0.7, 0.7, false)"})
+gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})      
+  }
 // Enable Scroll
 if (document.querySelector(`[data-scroll-container]`) != undefined) {
   let locoScroll = new LocomotiveScroll({
@@ -24,7 +30,4 @@ document.addEventListener('scroll', () => {
       document.querySelector(`header`).classList.remove('active')
   }
 })
-//gsap-----------------------------------------------------------------
-gsap.from('#nav',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
-gsap.from('.header.active',{duration:1,y:'-100%',ease: "slow(0.7, 0.7, false)"})
 
